@@ -1,2 +1,2 @@
 # Koundinyasatech_NivassHub-
-Smart gated community management platform for residential societies
+Smart gated cormmunity management platform for residential societies
