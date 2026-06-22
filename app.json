@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "NivassHub",
+    "slug": "nivasshub",
+    "version": "1.0.0",
+    "scheme": "nivasshub",
+    "orientation": "portrait",
+    "icon": "./assets/images/placeholder.png",
+    "splash": {
+      "image": "./assets/images/placeholder.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/placeholder.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.nivasshub.app",
+      "newArchEnabled": false
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "root": "src/app"
+        }
+      ],
+      "expo-secure-store"
+    ],
+    "experiments": {
+      "typedRoutes": false
+    }
+  }
+}
