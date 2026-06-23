@@ -84,14 +84,13 @@ export default function LoginScreen() {
     }
   };
 
-  // Quick login for demo
+  // Quick login for demo — dispatches directly to avoid stale-closure on state
   const handleQuickLogin = () => {
-    setEmail(DEMO_EMAIL);
-    setPassword(DEMO_PASSWORD);
-    // Auto-login after setting credentials
-    setTimeout(() => {
-      handleLogin();
-    }, 100);
+    dispatch(setAuth({
+      user: { id: '1', email: DEMO_EMAIL, name: 'Saran' },
+      token: 'demo-token-' + Date.now(),
+    }));
+    router.replace('/home');
   };
 
   return (
@@ -152,6 +151,12 @@ export default function LoginScreen() {
               loading={loading}
               style={styles.loginBtn}
             />
+
+            <TouchableOpacity style={styles.quickLoginBtn} onPress={handleQuickLogin}>
+              <Text style={{ color: '#fff', fontWeight: '600', fontSize: 14 }}>
+                Demo Login (saran@gmail.com)
+              </Text>
+            </TouchableOpacity>
           </View>
         </ScrollView>
       </KeyboardAvoidingView>

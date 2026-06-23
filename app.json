@@ -5,16 +5,16 @@
     "version": "1.0.0",
     "scheme": "nivasshub",
     "orientation": "portrait",
-    "icon": "./assets/images/placeholder.png",
+    "icon": "./assets/images/image.png",
     "splash": {
-      "image": "./assets/images/placeholder.png",
+      "image": "./assets/images/image.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#1E3A5F"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/placeholder.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/images/image.png",
+        "backgroundColor": "#1E3A5F"
       },
       "package": "com.nivasshub.app",
       "newArchEnabled": false
