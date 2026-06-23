@@ -1,0 +1,82 @@
+{
+  "society": {
+    "name": "NivassHub Residency",
+    "address": "14, Whitefield Main Road, Bengaluru – 560066",
+    "totalFlats": 40,
+    "totalBlocks": 4,
+    "floorsPerBlock": 5,
+    "established": "2022-01-01",
+    "registrationNumber": "BDA/REG/2022/0145"
+  },
+  "occupancy": {
+    "total": 40,
+    "occupied": 36,
+    "vacant": 4,
+    "percentOccupied": 90
+  },
+  "visitors": {
+    "todayTotal": 12,
+    "currentlyInside": 3,
+    "checkedOutToday": 9
+  },
+  "complaints": {
+    "total": 10,
+    "open": 4,
+    "inProgress": 3,
+    "resolved": 3,
+    "critical": 2
+  },
+  "payments": {
+    "month": "June 2026",
+    "totalExpected": 37500,
+    "totalCollected": 25000,
+    "pending": 12500,
+    "overdue": 4500,
+    "collectionPercent": 67
+  },
+  "notices": {
+    "total": 10,
+    "active": 8,
+    "pinned": 2
+  },
+  "amenities": [
+    { "name": "Swimming Pool", "status": "operational", "icon": "pool" },
+    { "name": "Gym", "status": "operational", "icon": "fitness-center" },
+    { "name": "Clubhouse", "status": "operational", "icon": "home" },
+    { "name": "Children's Play Area", "status": "operational", "icon": "child-care" },
+    { "name": "Terrace Garden", "status": "maintenance", "icon": "nature" },
+    { "name": "Indoor Games Room", "status": "operational", "icon": "sports-esports" }
+  ],
+  "recentActivity": [
+    {
+      "id": "a001",
+      "type": "visitor",
+      "message": "Seema Joshi checked in at B-203",
+      "timestamp": "2026-06-22T11:00:00"
+    },
+    {
+      "id": "a002",
+      "type": "complaint",
+      "message": "New complaint: Lift Not Working (Block B)",
+      "timestamp": "2026-06-22T08:30:00"
+    },
+    {
+      "id": "a003",
+      "type": "payment",
+      "message": "Maintenance payment received from C-202",
+      "timestamp": "2026-06-22T07:20:00"
+    },
+    {
+      "id": "a004",
+      "type": "notice",
+      "message": "New notice: Fire Safety Drill posted",
+      "timestamp": "2026-06-22T08:00:00"
+    },
+    {
+      "id": "a005",
+      "type": "visitor",
+      "message": "Amazon Logistics checked out from D-302",
+      "timestamp": "2026-06-22T10:40:00"
+    }
+  ]
+}

@@ -11,7 +11,7 @@ import {
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useDispatch, useSelector } from 'react-redux';
 import { useRouter } from 'expo-router';
-import { loginUser, clearAuthError, setAuth } from '../../redux/slices/authSlice';
+import { loginUser, clearAuthError, setAuth } from '../../store/slices/authSlice';
 import CustomInput from '../../components/inputs/CustomInput';
 import PrimaryButton from '../../components/buttons/PrimaryButton';
 import { COLORS } from '../../constants/colors';
@@ -160,12 +160,12 @@ export default function LoginScreen() {
 }
 
 const styles = StyleSheet.create({
-  safe: { 
-    flex: 1, 
-    backgroundColor: COLORS.primary 
+  safe: {
+    flex: 1,
+    backgroundColor: COLORS.primary
   },
-  flex: { 
-    flex: 1 
+  flex: {
+    flex: 1
   },
   scroll: {
     flexGrow: 1,
@@ -236,8 +236,8 @@ const styles = StyleSheet.create({
     color: COLORS.primary,
     fontWeight: '500',
   },
-  loginBtn: { 
-    width: '100%' 
+  loginBtn: {
+    width: '100%'
   },
 
   quickLoginBtn: {

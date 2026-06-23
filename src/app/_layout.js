@@ -1,3 +1,4 @@
+// app/_layout.js
 import { Provider } from 'react-redux';
 import { store } from '../redux/store/store';
 import { Stack } from 'expo-router';
@@ -12,6 +13,7 @@ export default function RootLayout() {
         <StatusBar style="light" backgroundColor={COLORS.primary} />
         <Stack screenOptions={{ headerShown: false }}>
           <Stack.Screen name="index" />
+          <Stack.Screen name="splash" />
           <Stack.Screen name="login" />
           <Stack.Screen name="home" />
           <Stack.Screen name="profile" />

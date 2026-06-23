@@ -68,7 +68,7 @@
 // redux/slices/authSlice.js
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { authService } from '../../services/authService';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import * as SecureStore from 'expo-secure-store';
 
 // Initial state
 const initialState = {
@@ -85,8 +85,8 @@ export const loginUser = createAsyncThunk(
     try {
       const data = await authService.login(email, password);
       // Save to storage
-      await AsyncStorage.setItem('user', JSON.stringify(data.user));
-      await AsyncStorage.setItem('token', data.token);
+      await SecureStore.setItemAsync('user', JSON.stringify(data.user));
+      await SecureStore.setItemAsync('token', data.token);
       return data;
     } catch (err) {
       return rejectWithValue(err.message);
@@ -97,8 +97,8 @@ export const loginUser = createAsyncThunk(
 export const logoutUser = createAsyncThunk('auth/logoutUser', async () => {
   await authService.logout();
   // Clear storage
-  await AsyncStorage.removeItem('user');
-  await AsyncStorage.removeItem('token');
+  await SecureStore.deleteItemAsync('user');
+  await SecureStore.deleteItemAsync('token');
 });
 
 const authSlice = createSlice({
@@ -112,9 +112,9 @@ const authSlice = createSlice({
       state.user = action.payload.user;
       state.token = action.payload.token;
       state.isAuthenticated = true;
-      // Save to storage
-      AsyncStorage.setItem('user', JSON.stringify(action.payload.user));
-      AsyncStorage.setItem('token', action.payload.token);
+      // Save to storage (fire-and-forget — reducers must be synchronous)
+      SecureStore.setItemAsync('user', JSON.stringify(action.payload.user));
+      SecureStore.setItemAsync('token', action.payload.token);
     },
     restoreAuth: (state, action) => {
       state.user = action.payload.user;
