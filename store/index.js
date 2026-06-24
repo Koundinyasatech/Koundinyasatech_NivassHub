@@ -1,18 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import authReducer from './slices/authSlice';
-import userReducer from './slices/userSlice';
-import dashboardReducer from './slices/dashboardSlice';
+import appReducer from './slices/appSlice';
 
-export const store = configureStore({
+const store = configureStore({
   reducer: {
-    auth: authReducer,
-    user: userReducer,
-    dashboard: dashboardReducer,
+    app: appReducer,
   },
-  middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware({
-      serializableCheck: {
-        ignoredActions: ['auth/loginUser/fulfilled'],
-      },
-    }),
 });
+
+export default store;

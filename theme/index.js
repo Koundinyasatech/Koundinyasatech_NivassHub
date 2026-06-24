@@ -1,2 +1,2 @@
-export { TYPOGRAPHY } from './typography';
-export { SPACING, BORDER_RADIUS, SHADOWS } from './spacing';
+export { default as spacing } from './spacing';
+export { default as typography } from './typography';

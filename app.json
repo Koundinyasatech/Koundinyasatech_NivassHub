@@ -5,31 +5,22 @@
     "version": "1.0.0",
     "scheme": "nivasshub",
     "orientation": "portrait",
-    "icon": "./assets/images/image.png",
+    "icon": "./assets/icons/icon.png",
     "splash": {
-      "image": "./assets/images/image.png",
+      "image": "./assets/images/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#1E3A5F"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/image.png",
+        "foregroundImage": "./assets/icons/icon.png",
         "backgroundColor": "#1E3A5F"
       },
       "package": "com.nivasshub.app",
       "newArchEnabled": false
     },
     "plugins": [
-      [
-        "expo-router",
-        {
-          "root": "app"
-        }
-      ],
       "expo-secure-store"
-    ],
-    "experiments": {
-      "typedRoutes": false
-    }
+    ]
   }
 }
