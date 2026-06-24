@@ -1,0 +1,20 @@
+{
+  "stats": {
+    "totalResidents": 148,
+    "totalFlats": 160,
+    "activeVisitors": 12,
+    "monthlyMaintenanceCollection": 384000,
+    "pendingComplaints": 7,
+    "occupancyRate": 92
+  },
+  "recentActivities": [
+    { "id": "a1", "type": "visitor", "message": "Visitor Ramesh Kumar checked in at Gate 1", "time": "10 mins ago", "icon": "person-add" },
+    { "id": "a2", "type": "maintenance", "message": "Maintenance request #MC-045 assigned to plumber", "time": "25 mins ago", "icon": "build" },
+    { "id": "a3", "type": "payment", "message": "Flat 204 maintenance fee collected ₹2,400", "time": "1 hr ago", "icon": "cash" },
+    { "id": "a4", "type": "notice", "message": "New notice posted: Water supply disruption on 25th June", "time": "2 hrs ago", "icon": "notifications" },
+    { "id": "a5", "type": "visitor", "message": "Visitor Priya Sharma checked out from Gate 2", "time": "3 hrs ago", "icon": "exit" },
+    { "id": "a6", "type": "maintenance", "message": "Maintenance request #MC-044 resolved – Lift repair done", "time": "5 hrs ago", "icon": "checkmark-circle" },
+    { "id": "a7", "type": "payment", "message": "Flat 312 maintenance fee collected ₹2,400", "time": "6 hrs ago", "icon": "cash" },
+    { "id": "a8", "type": "amenity", "message": "Swimming pool booking confirmed for Block B residents", "time": "8 hrs ago", "icon": "water" }
+  ]
+}
