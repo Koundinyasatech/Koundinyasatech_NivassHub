@@ -1,0 +1,77 @@
+[
+  {
+    "id": "am01",
+    "name": "Club House",
+    "icon": "home",
+    "status": "Available",
+    "capacity": 100,
+    "timings": "6:00 AM – 10:00 PM",
+    "bookingRequired": true,
+    "description": "A spacious club house with indoor games, lounge area, and meeting rooms. Available for private events and society gatherings.",
+    "facilities": ["AC Hall", "Indoor Games", "Meeting Room", "Stage & Sound System", "Kitchen"],
+    "bookingFee": 2000,
+    "maintenanceDay": "Monday",
+    "currentBookings": [
+      { "date": "2024-06-25", "flat": "A-201", "purpose": "Birthday Party", "time": "6 PM – 10 PM" },
+      { "date": "2024-06-28", "flat": "B-101", "purpose": "Anniversary", "time": "5 PM – 9 PM" }
+    ]
+  },
+  {
+    "id": "am02",
+    "name": "Gym",
+    "icon": "fitness",
+    "status": "Available",
+    "capacity": 20,
+    "timings": "5:00 AM – 10:00 PM",
+    "bookingRequired": false,
+    "description": "Fully equipped modern gym with cardio machines, free weights, and resistance equipment. Personal trainer available on request.",
+    "facilities": ["Treadmill x3", "Elliptical x2", "Cycle x2", "Free Weights", "Resistance Machines", "AC"],
+    "bookingFee": 0,
+    "maintenanceDay": "Wednesday",
+    "currentBookings": []
+  },
+  {
+    "id": "am03",
+    "name": "Swimming Pool",
+    "icon": "water",
+    "status": "Under Maintenance",
+    "capacity": 30,
+    "timings": "6:00 AM – 8:00 AM, 5:00 PM – 8:00 PM",
+    "bookingRequired": false,
+    "description": "Olympic-size swimming pool with separate kids' pool. Lifeguard on duty during swimming hours. Pool closed on Thursdays for cleaning.",
+    "facilities": ["Adult Pool", "Kids Pool", "Changing Rooms", "Shower Area", "Lifeguard"],
+    "bookingFee": 0,
+    "maintenanceDay": "Thursday",
+    "currentBookings": []
+  },
+  {
+    "id": "am04",
+    "name": "Community Hall",
+    "icon": "people",
+    "status": "Available",
+    "capacity": 200,
+    "timings": "8:00 AM – 11:00 PM",
+    "bookingRequired": true,
+    "description": "Large community hall for society events, cultural programs, and big gatherings. Equipped with projector, mic system, and stage.",
+    "facilities": ["Projector & Screen", "Sound System", "Stage", "Dining Area", "Kitchen", "AC"],
+    "bookingFee": 3500,
+    "maintenanceDay": "Tuesday",
+    "currentBookings": [
+      { "date": "2024-06-26", "flat": "Society", "purpose": "AGM Meeting", "time": "10 AM – 1 PM" }
+    ]
+  },
+  {
+    "id": "am05",
+    "name": "Parking Area",
+    "icon": "car",
+    "status": "Available",
+    "capacity": 180,
+    "timings": "24 Hours",
+    "bookingRequired": false,
+    "description": "Covered basement parking and open surface parking. CCTV surveillance 24/7. Separate visitor parking area near Gate 2.",
+    "facilities": ["Covered Parking – 120 slots", "Open Parking – 60 slots", "Visitor Parking – 20 slots", "CCTV", "EV Charging x4"],
+    "bookingFee": 0,
+    "maintenanceDay": "Sunday",
+    "currentBookings": []
+  }
+]
