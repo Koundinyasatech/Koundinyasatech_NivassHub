@@ -1,9 +1,0 @@
-node_modules/
-.expo/
-dist/
-build/
-android/
-ios/
-*.jks
-*.keystore
-npm-debug.log
