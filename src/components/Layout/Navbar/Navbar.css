@@ -1,0 +1,54 @@
+.navbar{
+height:70px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 35px;
+background:#fff;
+border-bottom:1px solid #eee;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#d96d2c;
+}
+
+.logo span{
+color:#1f2d3d;
+}
+
+.search{
+width:500px;
+height:40px;
+border:1px solid #ddd;
+border-radius:12px;
+display:flex;
+align-items:center;
+padding:0 18px;
+gap:10px;
+}
+
+.search input{
+flex:1;
+border:none;
+outline:none;
+font-size:16px;
+}
+
+.search svg{
+font-size:20px;
+color:#777;
+}
+.navbar {
+  height: 66px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 28px;
+
+  background: white;
+  border-bottom: 1px solid #e6e6e6;
+}

@@ -1,0 +1,29 @@
+.role-area{
+display:flex;
+align-items:center;
+gap:18px;
+}
+
+.role-area span{
+color:#777;
+}
+
+.role-area select{
+height:42px;
+padding:0 14px;
+border-radius:8px;
+border:1px solid #ddd;
+font-size:15px;
+}
+
+.avatar{
+width:42px;
+height:42px;
+border-radius:50%;
+background:#16263d;
+color:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold;
+}

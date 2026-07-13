@@ -1,0 +1,17 @@
+.ownership-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 16px;
+}
+
+.ownership-search {
+  width: 320px;
+}
+
+.record-count {
+  font-size: 14px;
+  font-weight: 600;
+  color: #64748b;
+}

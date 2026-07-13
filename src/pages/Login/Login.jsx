@@ -1,38 +1,20 @@
 import "./Login.css";
 import { useState } from "react";
-import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { loginAPI } from "../../features/auth/authAPI";
-import { setCredentials } from "../../features/auth/authSlice";
 
 function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
-    try {
-      const response = await loginAPI({
-        username,
-        password,
-      });
+    console.log("Login Successful");
 
-      dispatch(
-        setCredentials({
-          user: response.user,
-          accessToken: response.accessToken,
-        })
-      );
-
-      navigate("/dashboard");
-    } catch (error) {
-      console.error("Login failed:", error);
-      alert("Invalid username or password");
-    }
+    // Directly navigate to dashboard
+    navigate("/foundation");
   };
 
   return (

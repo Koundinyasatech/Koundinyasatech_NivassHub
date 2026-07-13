@@ -172,7 +172,9 @@ button {
 }
 
 button:hover {
-  background: #b94808;
+  /* background: #7b5139; */
+  background:#e5ab90;
+  color:"black"
 }
 
 .footer-text {

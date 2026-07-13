@@ -1,0 +1,61 @@
+.family-card {
+  margin-bottom: 2px;
+}
+
+.family-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.family-card-header h2 {
+  margin: 0;
+}
+
+.family-card-header p {
+  margin-top: 6px;
+  color: #666;
+  font-size: 10px;
+}
+
+.family-member-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.family-member-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-top: 1px solid #eee;
+}
+
+.family-member-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.family-avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #f6e4d8;
+  color: #b85b2c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.family-member-left h4 {
+  margin: 0;
+}
+
+.family-member-left p {
+  margin: 4px 0 0;
+  color: #666;
+}

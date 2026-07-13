@@ -1,0 +1,48 @@
+.unit-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.unit-toolbar-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.unit-search {
+  width: 260px;
+}
+
+.unit-filter {
+  width: 180px;
+}
+
+.record-count {
+  font-size: 14px;
+  color: var(--text-gray);
+  white-space: nowrap;
+}
+
+@media (max-width: 992px) {
+  .unit-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .unit-toolbar-left {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .unit-search,
+  .unit-filter {
+    width: 100%;
+  }
+
+  .record-count {
+    text-align: right;
+  }
+}

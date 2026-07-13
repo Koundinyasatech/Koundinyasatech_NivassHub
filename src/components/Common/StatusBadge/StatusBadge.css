@@ -1,0 +1,60 @@
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: capitalize;
+  min-width: 90px;
+}
+
+/* Green */
+.status-badge.active,
+.status-badge.approved,
+.status-badge.paid,
+.status-badge.occupied {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+/* Red */
+.status-badge.inactive,
+.status-badge.rejected,
+.status-badge.unpaid,
+.status-badge.closed {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* Yellow */
+.status-badge.pending,
+.status-badge.vacant {
+  background: #fef9c3;
+  color: #ca8a04;
+}
+
+/* Blue */
+.status-badge.open {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+/* Gray */
+.status-badge.locked,
+.status-badge.default {
+  background: #f3f4f6;
+  color: #4b5563;
+}
+/* Green */
+.status-badge.self-occupied {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+/* Blue */
+.status-badge.rented-out {
+  background: #dbeafe;
+  color: #2563eb;
+}

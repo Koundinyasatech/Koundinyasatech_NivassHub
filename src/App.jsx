@@ -1,14 +1,7 @@
-// import AppRoutes from "./routes/AppRoutes";
-
-// function App() {
-//   return <AppRoutes />;
-// }
-
-// export default App;
-import Sidebar from "./components/Sidebar/Sidebar";
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
-  return <Sidebar />;
+  return <AppRoutes />;
 }
 
 export default App;

@@ -1,0 +1,42 @@
+export const vehicleDummyData = [
+  {
+    id: 1,
+    plateNumber: "TS 09 EA 4471",
+    unit: "A-101",
+    type: "4W",
+    parkingSlot: "B1-014",
+    status: "Approved",
+  },
+  {
+    id: 2,
+    plateNumber: "TS 07 KX 8821",
+    unit: "B-306",
+    type: "2W",
+    parkingSlot: "B2-051",
+    status: "Approved",
+  },
+  {
+    id: 3,
+    plateNumber: "TS 10 JZ 1190",
+    unit: "C-207",
+    type: "4W",
+    parkingSlot: "-",
+    status: "Pending",
+  },
+  {
+    id: 4,
+    plateNumber: "TS 09 DD 0034",
+    unit: "A-304",
+    type: "2W",
+    parkingSlot: "B1-077",
+    status: "Approved",
+  },
+  {
+    id: 5,
+    plateNumber: "KA 05 MN 9921",
+    unit: "D-103",
+    type: "4W",
+    parkingSlot: "-",
+    status: "Pending",
+  },
+];
