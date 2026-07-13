@@ -1,0 +1,23 @@
+.empty-state {
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.empty-icon {
+  font-size: 70px;
+}
+
+.empty-state h2 {
+  font-size: 22px;
+  color: var(--text-dark);
+}
+
+.empty-state p {
+  color: var(--text-gray);
+  max-width: 400px;
+}

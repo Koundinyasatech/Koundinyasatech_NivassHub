@@ -1,0 +1,16 @@
+.admin-role-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.admin-role-search {
+  width: 320px;
+}
+
+.record-count {
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7280;
+}

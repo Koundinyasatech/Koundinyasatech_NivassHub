@@ -1,6 +1,6 @@
 :root {
-  --primary: #f1b897;
-  --primary-dark: #e08550;
+  --primary: #e5b79d;
+  --primary-dark: #c69f88;
 
   --bg-light: #f8f3ed;
   --white: #ffffff;
@@ -10,9 +10,9 @@
 
   --border: #e5e7eb;
 
-  /* Add these */
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --shadow-sm: 0 2px 8px rgba(0,0,0,.05);
+  --shadow-md: 0 4px 20px rgba(0,0,0,.08);
+
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 20px;

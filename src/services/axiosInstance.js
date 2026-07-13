@@ -6,7 +6,7 @@ import {
 } from "../features/auth/authSlice";
 
 const axiosInstance = axios.create({
-  baseURL: "https://your-api-url.com/api",
+  baseURL: "https://skyline-plated-casualty.ngrok-free.dev",
   headers: {
     "Content-Type": "application/json",
   },
@@ -41,7 +41,7 @@ axiosInstance.interceptors.response.use(
 
       try {
         const refreshResponse = await axios.post(
-          "https://your-api-url.com/api/auth/refresh",
+          "/api/auth/refresh-token",
           {},
           {
             withCredentials: true,

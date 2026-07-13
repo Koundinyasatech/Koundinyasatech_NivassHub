@@ -1,0 +1,12 @@
+.society-profile-form{
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+}
+
+.form-footer{
+    display:flex;
+    justify-content:flex-end;
+    gap:12px;
+    margin-top:8px;
+}

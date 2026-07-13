@@ -1,0 +1,9 @@
+.admin-page{
+    display:flex;
+    flex-direction:column;
+    gap:1px;
+}
+
+.admin-page-content{
+    width:100%;
+}

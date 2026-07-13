@@ -1,0 +1,38 @@
+.common-tabs{
+    display:flex;
+    align-items:center;
+    gap:1px;
+    margin-bottom:15px;
+    border-bottom:1px solid #E5E7EB;
+    overflow-x:auto;
+    scrollbar-width:none;
+}
+
+.common-tabs::-webkit-scrollbar{
+    display:none;
+}
+
+.tab-btn{
+    border:none;
+    background:transparent;
+    padding:14px 20px;
+    cursor:pointer;
+    color:#6B7280;
+    font-size:14px;
+    font-weight:500;
+    white-space:nowrap;
+    border-bottom:3px solid transparent;
+    transition:.3s;
+}
+
+.tab-btn:hover{
+    color:#060505;
+}
+
+.tab-btn.active{
+    /* color:#e5ab90; */
+    /* background:#e5ab90; */
+  color:"black";
+    border-bottom:3px solid #efacac;
+    font-weight:600;
+}
