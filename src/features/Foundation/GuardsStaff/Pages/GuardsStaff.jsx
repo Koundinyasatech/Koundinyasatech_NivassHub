@@ -9,9 +9,14 @@ import { guardDummyData } from "../sections/GuardProfiles/data/guardDummyData";
 import { shiftRosterDummyData } from "../sections/ShiftRoster/data/shiftRosterDummyData";
 import { clockLogsDummyData } from "../sections/ClockLogs/data/clockLogsDummyData";
 
+import { domesticStaffDummyData } from "../sections/DomesticStaff/data/domesticStaffDummyData";
+import { staffTypeDummyData } from "../sections/DomesticStaff/data/staffTypeDummyData";
+import { linkedFlatsDummyData } from "../sections/DomesticStaff/data/linkedFlatsDummyData";
+
 import GuardModal from "../sections/GuardProfiles/components/GuardModal";
 import ShiftRosterModal from "../sections/ShiftRoster/components/ShiftRosterModal";
 import ClockLogModal from "../sections/ClockLogs/components/ClockLogModal";
+import DomesticStaffModal from "../sections/DomesticStaff/components/DomesticStaffModal";
 
 function GuardsStaff() {
   const [activeTab, setActiveTab] =
@@ -45,7 +50,21 @@ function GuardsStaff() {
     useState(false);
 
   const [domesticStaff, setDomesticStaff] =
-    useState([]);
+    useState(domesticStaffDummyData);
+
+  const [staffTypes] = useState(
+    staffTypeDummyData
+  );
+
+  const [linkedFlats] = useState(
+    linkedFlatsDummyData
+  );
+
+  const [selectedStaff, setSelectedStaff] =
+    useState(null);
+
+  const [isStaffModalOpen, setIsStaffModalOpen] =
+    useState(false);
 
   const [attendance, setAttendance] =
     useState([]);
@@ -63,7 +82,11 @@ function GuardsStaff() {
 
   const CurrentComponent =
     currentTab.component;
-      const handleAddGuard = () => {
+      // =====================================================
+  // Guard Profile Functions
+  // =====================================================
+
+  const handleAddGuard = () => {
     setSelectedGuard(null);
     setIsGuardModalOpen(true);
   };
@@ -103,6 +126,10 @@ function GuardsStaff() {
       )
     );
   };
+
+  // =====================================================
+  // Shift Roster Functions
+  // =====================================================
 
   const handleAssignShift = () => {
     setSelectedShift(null);
@@ -144,6 +171,10 @@ function GuardsStaff() {
       )
     );
   };
+
+  // =====================================================
+  // Clock Logs Functions
+  // =====================================================
 
   const handleAddClockLog = () => {
     setSelectedClockLog(null);
@@ -190,17 +221,54 @@ function GuardsStaff() {
     console.log("Export Clock Logs");
   };
 
+  // =====================================================
+  // Domestic Staff Functions
+  // =====================================================
+
   const handleAddStaff = () => {
-    console.log("Add Staff");
+    setSelectedStaff(null);
+    setIsStaffModalOpen(true);
   };
 
   const handleEditStaff = (staff) => {
-    console.log("Edit Staff", staff);
+    setSelectedStaff(staff);
+    setIsStaffModalOpen(true);
+  };
+
+  const handleSaveStaff = (staff) => {
+    if (staff.id) {
+      setDomesticStaff((prev) =>
+        prev.map((item) =>
+          item.id === staff.id
+            ? staff
+            : item
+        )
+      );
+    } else {
+      setDomesticStaff((prev) => [
+        ...prev,
+        {
+          ...staff,
+          id: Date.now(),
+        },
+      ]);
+    }
+
+    setSelectedStaff(null);
+    setIsStaffModalOpen(false);
   };
 
   const handleDeleteStaff = (staff) => {
-    console.log("Delete Staff", staff);
+    setDomesticStaff((prev) =>
+      prev.filter(
+        (item) => item.id !== staff.id
+      )
+    );
   };
+
+  // =====================================================
+  // Attendance Functions
+  // =====================================================
 
   const handleMarkAttendance = (
     record
@@ -219,6 +287,10 @@ function GuardsStaff() {
       record
     );
   };
+
+  // =====================================================
+  // Agency Management Functions
+  // =====================================================
 
   const handleAddAgency = () => {
     console.log("Add Agency");
@@ -269,10 +341,15 @@ function GuardsStaff() {
               + Add Staff
             </Button>
           ) : activeTab === "attendance" ? (
-            <Button onClick={() => handleMarkAttendance(null)}>
+            <Button
+              onClick={() =>
+                handleMarkAttendance(null)
+              }
+            >
               Mark Attendance
             </Button>
-          ) : activeTab === "agencyManagement" ? (
+          ) : activeTab ===
+            "agencyManagement" ? (
             <Button onClick={handleAddAgency}>
               + Add Agency
             </Button>
@@ -289,6 +366,9 @@ function GuardsStaff() {
           domesticStaff={domesticStaff}
           attendance={attendance}
           agencies={agencies}
+
+          staffTypes={staffTypes}
+          linkedFlats={linkedFlats}
 
           onAddGuard={handleAddGuard}
           onEditGuard={handleEditGuard}
@@ -307,6 +387,7 @@ function GuardsStaff() {
 
           onAddStaff={handleAddStaff}
           onEditStaff={handleEditStaff}
+          onSaveStaff={handleSaveStaff}
           onDeleteStaff={handleDeleteStaff}
 
           onMarkAttendance={handleMarkAttendance}
@@ -346,6 +427,18 @@ function GuardsStaff() {
           setIsClockLogModalOpen(false);
         }}
         onSave={handleSaveClockLog}
+      />
+
+      <DomesticStaffModal
+        open={isStaffModalOpen}
+        staff={selectedStaff}
+        staffTypes={staffTypes}
+        linkedFlats={linkedFlats}
+        onClose={() => {
+          setSelectedStaff(null);
+          setIsStaffModalOpen(false);
+        }}
+        onSave={handleSaveStaff}
       />
     </>
   );

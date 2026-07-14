@@ -13,6 +13,7 @@ function DomesticStaff({
   domesticStaff,
   staffTypes,
   onEditStaff,
+  onDeleteStaff,
 }) {
   const [search, setSearch] =
     useState("");
@@ -68,11 +69,10 @@ function DomesticStaff({
     type,
   ]);
 
-  const totalPages =
-    Math.ceil(
-      filteredData.length /
-        pageSize
-    );
+  const totalPages = Math.ceil(
+    filteredData.length /
+      pageSize
+  );
 
   const paginatedData =
     useMemo(() => {
@@ -121,28 +121,20 @@ function DomesticStaff({
         </div>
 
         <div className="record-count">
-          {
-            filteredData.length
-          }{" "}
-          Records
+          {filteredData.length} Records
         </div>
       </div>
 
       <DomesticStaffTable
         data={paginatedData}
-        onEdit={
-          onEditStaff
-        }
+        onEdit={onEditStaff}
+        onDelete={onDeleteStaff}
       />
 
       <Pagination
         currentPage={page}
-        totalPages={
-          totalPages
-        }
-        onPageChange={
-          setPage
-        }
+        totalPages={totalPages}
+        onPageChange={setPage}
       />
     </Card>
   );
