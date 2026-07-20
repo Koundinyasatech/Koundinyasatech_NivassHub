@@ -5,19 +5,14 @@ import AdminPage from "../../../../components/Common/AdminPage/AdminPage";
 import { visitorTabs } from "../constants/visitorTabs";
 
 function VisitorManagement() {
-  const [activeTab, setActiveTab] =
-    useState("preapproval");
+  const [activeTab, setActiveTab] = useState("preapproval");
 
   const currentTab = useMemo(
-    () =>
-      visitorTabs.find(
-        (tab) => tab.id === activeTab
-      ),
+    () => visitorTabs.find((tab) => tab.id === activeTab),
     [activeTab]
   );
 
-  const CurrentComponent =
-    currentTab.component;
+  const CurrentComponent = currentTab.component;
 
   return (
     <AdminPage
@@ -31,7 +26,18 @@ function VisitorManagement() {
       tabs={visitorTabs}
       activeTab={activeTab}
       onTabChange={setActiveTab}
-      action={null}
+      action={
+        activeTab === "whitelist" ? (
+          <button
+            className="primary-btn"
+            onClick={() => {
+              console.log("Add Entry Clicked");
+            }}
+          >
+            + Add Entry
+          </button>
+        ) : null
+      }
     >
       <CurrentComponent />
     </AdminPage>
