@@ -159,8 +159,7 @@
   color: #d65a11;
   cursor: pointer;
 }
-
-button {
+.login-card button {
   width: 100%;
   padding: 18px;
   background: #d65a11;
@@ -171,10 +170,9 @@ button {
   cursor: pointer;
 }
 
-button:hover {
-  /* background: #7b5139; */
-  background:#e5ab90;
-  color:"black"
+.login-card button:hover {
+  background: #e5ab90;
+  color: black;
 }
 
 .footer-text {

@@ -1,0 +1,51 @@
+export const slotDummyData = [
+  {
+    id: 1,
+    slotNumber: "B1-014",
+    level: "Basement 1",
+    type: "4W",
+    status: "Allocated",
+  },
+  {
+    id: 2,
+    slotNumber: "B1-015",
+    level: "Basement 1",
+    type: "4W",
+    status: "Free",
+  },
+  {
+    id: 3,
+    slotNumber: "B1-077",
+    level: "Basement 1",
+    type: "2W",
+    status: "Allocated",
+  },
+  {
+    id: 4,
+    slotNumber: "B2-051",
+    level: "Basement 2",
+    type: "2W",
+    status: "Allocated",
+  },
+  {
+    id: 5,
+    slotNumber: "B2-052",
+    level: "Basement 2",
+    type: "2W",
+    status: "Free",
+  },
+  {
+    id: 6,
+    slotNumber: "B2-090",
+    level: "Basement 2",
+    type: "Visitor",
+    status: "Free",
+  },
+  {
+    id: 7,
+    slotNumber: "B2-091",
+    level: "Basement 2",
+    type: "Visitor",
+    status: "Occupied",
+  },
+];
