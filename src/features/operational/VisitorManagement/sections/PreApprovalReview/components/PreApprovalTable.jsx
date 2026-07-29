@@ -46,7 +46,7 @@ function PreApprovalTable({ data }) {
                     </button>
                   ) : (
                     <button className="override-btn">
-                      Override / Cancel
+                      Override / Cancel765432345678
                     </button>
                   )}
                 </td>

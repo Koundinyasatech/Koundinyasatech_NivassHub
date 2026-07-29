@@ -6,9 +6,9 @@ import Select from "../../../../../components/Common/Select/Select";
 import Table from "../../../../../components/Common/Table/Table";
 import Pagination from "../../../../../components/Common/Pagination/Pagination";
 import Modal from "../../../../../components/Common/Modal/Modal";
-import Button from "../../../../../components/Common/Button/Button";
 import columns from "./constants/tableColumns";
 import PreApprovalData from "./data/PreApprovalData";
+import Button from "../../../../../components/Common/Button/Button";
 
 function PreApprovalReview() {
   const [search, setSearch] = useState("");
