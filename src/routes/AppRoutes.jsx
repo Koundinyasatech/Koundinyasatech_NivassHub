@@ -17,6 +17,10 @@ import VisitorManagement from "../features/Operational/VisitorManagement/Pages/V
 import PackageDelivery from "../features/Operational/PackageDelivery/Pages/PackageDelivery";
 import ParkingManagement from "../features/Operational/ParkingManagement/Pages/ParkingManagement";
 import SmartAccessControl from "../features/Operational/SmartAccessControl/Pages/SmartAccessControl";
+
+import AmenityBooking from "../features/community/AmenityBooking/Pages/AmenityBooking";
+import NoticesCommunication from "../features/community/NoticesCommunication/Pages/NoticesCommunication";
+
 function AppRoutes() {
   return (
     <BrowserRouter>
@@ -35,7 +39,8 @@ function AppRoutes() {
             </ProtectedRoute>
           }
         >
-          {/* Default Foundation Route */}
+          {/* Foundation */}
+
           <Route
             path="/foundation"
             element={
@@ -46,7 +51,6 @@ function AppRoutes() {
             }
           />
 
-          {/* Foundation Modules */}
           <Route
             path="/foundation/society"
             element={<SocietyUnits />}
@@ -61,9 +65,8 @@ function AppRoutes() {
             path="/foundation/guards"
             element={<GuardsStaff />}
           />
-          {/* ==========================================
-    Operational
-========================================== */}
+
+          {/* Operational */}
 
           <Route
             path="/operational"
@@ -93,6 +96,28 @@ function AppRoutes() {
           <Route
             path="/operational/smart-access-control"
             element={<SmartAccessControl />}
+          />
+
+          {/* Community */}
+
+          <Route
+            path="/community"
+            element={
+              <Navigate
+                to="/community/amenity-booking"
+                replace
+              />
+            }
+          />
+
+          <Route
+            path="/community/amenity-booking"
+            element={<AmenityBooking />}
+          />
+
+          <Route
+            path="/community/notices-communication"
+            element={<NoticesCommunication />}
           />
         </Route>
       </Routes>

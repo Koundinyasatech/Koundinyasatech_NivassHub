@@ -59,7 +59,24 @@ export const sidebarData = [
     key: "community",
     icon: FiUsers,
     color: "#59b36b",
-    children: [],
+    children: [
+      {
+        title: "Amenity Booking",
+        path: "/community/amenity-booking",
+      },
+      {
+        title: "Notices & Communication",
+        path: "/community/notices-communication",
+      },
+      {
+        title: "Polls & Voting",
+        path: "/community/polls-voting",
+      },
+      {
+        title: "Society Documents",
+        path: "/community/society-documents",
+      },
+    ],
   },
 
   {
