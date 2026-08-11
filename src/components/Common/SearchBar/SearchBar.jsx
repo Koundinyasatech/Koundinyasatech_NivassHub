@@ -5,10 +5,13 @@ function SearchBox({
   onChange,
   placeholder = "Search...",
   width = "320px",
+  showIcon = false,
 }) {
   return (
     <div className="search-box" style={{ width }}>
-      <span className="search-icon">🔍</span>
+      {showIcon && (
+        <span className="search-icon">🔍</span>
+      )}
 
       <input
         type="text"

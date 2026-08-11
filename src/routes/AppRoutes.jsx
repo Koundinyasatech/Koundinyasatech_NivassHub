@@ -9,17 +9,28 @@ import Login from "../pages/Login/Login";
 import ProtectedRoute from "../components/ProtectedRoute";
 import AdminLayout from "../layouts/AdminLayout";
 
+/* =========================
+   Foundation
+========================= */
 import SocietyUnits from "../features/Foundation/SocietyUnits/pages/SocietyUnits";
 import ResidentsUsers from "../features/Foundation/ResidentsUsers/pages/ResidentsUsers";
 import GuardsStaff from "../features/Foundation/GuardsStaff/Pages/GuardsStaff";
 
+/* =========================
+   Operational
+========================= */
 import VisitorManagement from "../features/Operational/VisitorManagement/Pages/VisitorManagement";
 import PackageDelivery from "../features/Operational/PackageDelivery/Pages/PackageDelivery";
 import ParkingManagement from "../features/Operational/ParkingManagement/Pages/ParkingManagement";
 import SmartAccessControl from "../features/Operational/SmartAccessControl/Pages/SmartAccessControl";
 
+/* =========================
+   Community
+========================= */
 import AmenityBooking from "../features/community/AmenityBooking/Pages/AmenityBooking";
 import NoticesCommunication from "../features/community/NoticesCommunication/Pages/NoticesCommunication";
+import PollsVoting from "../features/community/PollsVoting/Pages/PollsVoting";
+import SocietyDocuments from "../features/community/SocietyDocuments/Pages/SocietyDocuments";
 
 function AppRoutes() {
   return (
@@ -39,7 +50,9 @@ function AppRoutes() {
             </ProtectedRoute>
           }
         >
-          {/* Foundation */}
+          {/* =========================
+              Foundation
+          ========================= */}
 
           <Route
             path="/foundation"
@@ -66,7 +79,9 @@ function AppRoutes() {
             element={<GuardsStaff />}
           />
 
-          {/* Operational */}
+          {/* =========================
+              Operational
+          ========================= */}
 
           <Route
             path="/operational"
@@ -98,7 +113,9 @@ function AppRoutes() {
             element={<SmartAccessControl />}
           />
 
-          {/* Community */}
+          {/* =========================
+              Community
+          ========================= */}
 
           <Route
             path="/community"
@@ -118,6 +135,16 @@ function AppRoutes() {
           <Route
             path="/community/notices-communication"
             element={<NoticesCommunication />}
+          />
+
+          <Route
+            path="/community/polls-voting"
+            element={<PollsVoting />}
+          />
+
+          <Route
+            path="/community/society-documents"
+            element={<SocietyDocuments />}
           />
         </Route>
       </Routes>
