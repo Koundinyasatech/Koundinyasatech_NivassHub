@@ -14,12 +14,12 @@ export const packageTabs = [
     component: PackageIntakeLog,
   },
   {
-    id: "locker",
-    label: "Smart Locker Config",
-    title: "Smart Locker Config",
-    subtitle: "Configure smart lockers.",
-    component: SmartLockerConfig,
-  },
+  id: "locker",
+  label: "Smart Locker Config",
+  title: "Smart Locker Config",
+  subtitle: "Configure smart lockers.",
+  component: SmartLockerConfig,
+},
   {
     id: "delivery",
     label: "Delivery Status Board",

@@ -3,10 +3,12 @@ import { useMemo, useState } from "react";
 import AdminPage from "../../../../components/Common/AdminPage/AdminPage";
 
 import { smartAccessTabs } from "../constants/smartAccessTabs";
+import Button from "../../../../components/Common/Button/Button";
 
 function SmartAccessControl() {
   const [activeTab, setActiveTab] =
     useState("qrGate");
+    const [isAddBarrierOpen, setIsAddBarrierOpen] = useState(false);
 
   // =====================================================
   // QR Gate Pass Management
@@ -138,7 +140,16 @@ function SmartAccessControl() {
       ]}
       title={currentTab.title}
       subtitle={currentTab.subtitle}
-      action={null}
+      action={
+  activeTab === "boomBarrier" ? (
+    <Button
+      onClick={() => setIsAddBarrierOpen(true)}
+    >
+      + Add Barrier
+    </Button>
+  ) : null
+}
+      
       tabs={smartAccessTabs}
       activeTab={activeTab}
       onTabChange={setActiveTab}
@@ -196,6 +207,10 @@ function SmartAccessControl() {
         onResolveAnomaly={
           handleResolveAnomaly
         }
+        isAddBarrierOpen={isAddBarrierOpen}
+onCloseAddBarrier={() =>
+  setIsAddBarrierOpen(false)
+}
       />
     </AdminPage>
   );

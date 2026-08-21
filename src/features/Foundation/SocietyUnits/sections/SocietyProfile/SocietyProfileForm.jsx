@@ -8,14 +8,14 @@ import SocietyOfficeInfo from "../../components/SocietyOfficeInfo";
 
 import useSocietyForm from "../../hooks/useSocietyForm";
 
-function SocietyProfileForm() {
+function SocietyProfileForm({ currentSociety }) {
   const {
     formData,
     errors,
     handleChange,
     handleSubmit,
     resetForm,
-  } = useSocietyForm();
+  } = useSocietyForm(currentSociety);
 
   return (
     <div className="society-profile-form">

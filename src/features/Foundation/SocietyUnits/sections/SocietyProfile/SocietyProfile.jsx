@@ -3,11 +3,13 @@ import SocietyProfileForm from "./SocietyProfileForm";
 
 import "./SocietyProfile.css";
 
-function SocietyProfile() {
+function SocietyProfile({ currentSociety }) {
   return (
     <div className="society-profile-page">
       <Card>
-        <SocietyProfileForm />
+        <SocietyProfileForm
+          currentSociety={currentSociety}
+        />
       </Card>
     </div>
   );

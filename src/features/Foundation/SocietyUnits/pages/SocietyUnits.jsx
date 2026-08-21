@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import AdminPage from "../../../../components/Common/AdminPage/AdminPage";
 import Button from "../../../../components/Common/Button/Button";
@@ -16,8 +17,29 @@ import UnitModal from "../components/UnitModal";
 import TransferOwnershipModal from "../components/TransferOwnershipModal";
 import AdminRoleModal from "../components/AdminRoleModal";
 
+import { societyPlanData } from "../../../system/BillingPlans/sections/SocietyPlanManagement/data/societyPlanData";
 function SocietyUnits() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
   const [activeTab, setActiveTab] = useState("profile");
+
+  // =====================================================
+  // Current Society
+  // =====================================================
+
+const currentSocietyId =
+  location.state?.societyId ||
+  sessionStorage.getItem("selectedSocietyId") ||
+  societyPlanData[0]?.id;
+  
+  const currentSociety = useMemo(() => {
+    return (
+      societyPlanData.find(
+        (society) => society.id === currentSocietyId
+      ) || societyPlanData[0]
+    );
+  }, [currentSocietyId]);
 
   // =====================================================
   // Tower State
@@ -39,26 +61,42 @@ function SocietyUnits() {
   // Ownership State
   // =====================================================
 
-  const [ownerships, setOwnerships] = useState(ownershipDummyData);
-  const [isTransferModalOpen, setIsTransferModalOpen] = useState(false);
-  const [selectedOwnership, setSelectedOwnership] = useState(null);
+  const [ownerships, setOwnerships] =
+    useState(ownershipDummyData);
+
+  const [isTransferModalOpen, setIsTransferModalOpen] =
+    useState(false);
+
+  const [selectedOwnership, setSelectedOwnership] =
+    useState(null);
 
   // =====================================================
   // Admin Role State
   // =====================================================
 
   const [roles, setRoles] = useState(adminRoleDummyData);
-  const [isAdminRoleModalOpen, setIsAdminRoleModalOpen] = useState(false);
+
+  const [isAdminRoleModalOpen, setIsAdminRoleModalOpen] =
+    useState(false);
+
   const [selectedRole, setSelectedRole] = useState(null);
 
   // =====================================================
   // Delete Dialog
   // =====================================================
 
-  const [deleteDialogOpen, setDeleteDialogOpen] = useState(false);
+  const [deleteDialogOpen, setDeleteDialogOpen] =
+    useState(false);
+
+  // =====================================================
+  // Current Tab
+  // =====================================================
 
   const currentTab = useMemo(
-    () => societyTabs.find((tab) => tab.id === activeTab),
+    () =>
+      societyTabs.find(
+        (tab) => tab.id === activeTab
+      ),
     [activeTab]
   );
 
@@ -94,7 +132,7 @@ function SocietyUnits() {
   };
 
   // =====================================================
-  // TOWER CRUD
+  // Tower CRUD
   // =====================================================
 
   const handleTowerEdit = (tower) => {
@@ -117,7 +155,8 @@ function SocietyUnits() {
                 tower: towerData.towerName,
                 wings: Number(towerData.wings),
                 floors: Number(towerData.floors),
-                namingConvention: towerData.namingConvention,
+                namingConvention:
+                  towerData.namingConvention,
               }
             : tower
         )
@@ -130,7 +169,8 @@ function SocietyUnits() {
           tower: towerData.towerName,
           wings: Number(towerData.wings),
           floors: Number(towerData.floors),
-          namingConvention: towerData.namingConvention,
+          namingConvention:
+            towerData.namingConvention,
           flats: 0,
         },
       ]);
@@ -141,7 +181,7 @@ function SocietyUnits() {
   };
 
   // =====================================================
-  // UNIT CRUD
+  // Unit CRUD
   // =====================================================
 
   const handleUnitEdit = (unit) => {
@@ -181,7 +221,7 @@ function SocietyUnits() {
   };
 
   // =====================================================
-  // OWNERSHIP CRUD
+  // Ownership CRUD
   // =====================================================
 
   const handleOwnershipTransfer = (ownership) => {
@@ -201,7 +241,8 @@ function SocietyUnits() {
           ? {
               ...ownership,
               owner: formData.newOwner,
-              possessionDate: formData.transferDate,
+              possessionDate:
+                formData.transferDate,
             }
           : ownership
       )
@@ -212,7 +253,7 @@ function SocietyUnits() {
   };
 
   // =====================================================
-  // ADMIN ROLE CRUD
+  // Admin Role CRUD
   // =====================================================
 
   const handleRoleEdit = (role) => {
@@ -251,44 +292,62 @@ function SocietyUnits() {
     setSelectedRole(null);
     setIsAdminRoleModalOpen(false);
   };
-    // =====================================================
-  // DELETE
+
+  // =====================================================
+  // Delete
   // =====================================================
 
   const confirmDelete = () => {
     if (activeTab === "towers" && selectedTower) {
       setTowers((prev) =>
-        prev.filter((tower) => tower.id !== selectedTower.id)
+        prev.filter(
+          (tower) => tower.id !== selectedTower.id
+        )
       );
+
       setSelectedTower(null);
     }
 
     if (activeTab === "units" && selectedUnit) {
       setUnits((prev) =>
-        prev.filter((unit) => unit.id !== selectedUnit.id)
+        prev.filter(
+          (unit) => unit.id !== selectedUnit.id
+        )
       );
+
       setSelectedUnit(null);
     }
 
-    if (activeTab === "ownership" && selectedOwnership) {
+    if (
+      activeTab === "ownership" &&
+      selectedOwnership
+    ) {
       setOwnerships((prev) =>
         prev.filter(
           (ownership) =>
             ownership.id !== selectedOwnership.id
         )
       );
+
       setSelectedOwnership(null);
     }
 
     if (activeTab === "roles" && selectedRole) {
       setRoles((prev) =>
-        prev.filter((role) => role.id !== selectedRole.id)
+        prev.filter(
+          (role) => role.id !== selectedRole.id
+        )
       );
+
       setSelectedRole(null);
     }
 
     setDeleteDialogOpen(false);
   };
+
+  // =====================================================
+  // Page Action
+  // =====================================================
 
   const pageAction = currentTab.action ? (
     <Button onClick={handleHeaderAction}>
@@ -296,14 +355,51 @@ function SocietyUnits() {
     </Button>
   ) : null;
 
+  // =====================================================
+  // Society Context Bar
+  // =====================================================
+
+const societyContextBar = (
+  <div className="society-context-bar">
+    <span className="society-context-dot">
+      ●
+    </span>
+
+    <span className="society-context-label">
+      Viewing
+    </span>
+
+    <strong className="society-context-name">
+      {currentSociety?.society}
+    </strong>
+
+    <span className="society-context-location">
+      · {currentSociety?.city}
+    </span>
+
+    <button
+      type="button"
+      className="society-context-switch"
+      onClick={() =>
+        navigate("/system-platform/billing-plans")
+      }
+    >
+      Switch society
+    </button>
+  </div>
+);
+  // =====================================================
+  // Render
+  // =====================================================
+
   return (
     <>
       <AdminPage
         breadcrumb={[
           "Foundation",
           "Society & Units",
-          currentTab.label,
         ]}
+        contextBar={societyContextBar}
         title={currentTab.title}
         subtitle={currentTab.subtitle}
         action={pageAction}
@@ -312,6 +408,7 @@ function SocietyUnits() {
         onTabChange={setActiveTab}
       >
         <CurrentComponent
+          currentSociety={currentSociety}
           towers={towers}
           units={units}
           ownerships={ownerships}
@@ -341,10 +438,11 @@ function SocietyUnits() {
               ? handleOwnershipTransfer
               : undefined
           }
-        >
-        </CurrentComponent>
+        />
       </AdminPage>
-            {/* Tower Modal */}
+
+      {/* Tower Modal */}
+
       <TowerModal
         open={isTowerModalOpen}
         tower={selectedTower}
@@ -356,6 +454,7 @@ function SocietyUnits() {
       />
 
       {/* Unit Modal */}
+
       <UnitModal
         open={isUnitModalOpen}
         unit={selectedUnit}
@@ -371,6 +470,7 @@ function SocietyUnits() {
       />
 
       {/* Transfer Ownership Modal */}
+
       <TransferOwnershipModal
         open={isTransferModalOpen}
         record={selectedOwnership}
@@ -382,6 +482,7 @@ function SocietyUnits() {
       />
 
       {/* Admin Role Modal */}
+
       <AdminRoleModal
         open={isAdminRoleModalOpen}
         role={selectedRole}
@@ -393,6 +494,7 @@ function SocietyUnits() {
       />
 
       {/* Delete Confirmation */}
+
       <ConfirmDialog
         isOpen={deleteDialogOpen}
         title={`Delete ${
@@ -418,7 +520,6 @@ function SocietyUnits() {
         onConfirm={confirmDelete}
         onCancel={() => {
           setDeleteDialogOpen(false);
-
           setSelectedTower(null);
           setSelectedUnit(null);
           setSelectedOwnership(null);

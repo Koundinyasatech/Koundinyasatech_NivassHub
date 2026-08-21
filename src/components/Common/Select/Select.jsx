@@ -16,29 +16,27 @@ function Select({
       {label && (
         <label className="select-label">
           {label}
-          {required && <span className="required">*</span>}
+          {required && (
+            <span className="required">*</span>
+          )}
         </label>
       )}
 
       <select
         name={name}
         value={value}
-        onChange={(e) => onChange(e.target.value)}
+        onChange={(e) =>
+          onChange(e.target.value)
+        }
         disabled={disabled}
-        className={`common-select ${error ? "select-error" : ""}`}
+        className={`common-select ${
+          error ? "select-error" : ""
+        }`}
       >
         <option value="">
           {placeholder}
         </option>
 
-        {options.map((option) => (
-          <option
-            key={option.value}
-            value={option.value}
-          >
-            {option.label}
-          </option>
-        ))}
         {options.map((option) => (
           <option
             key={option.value}

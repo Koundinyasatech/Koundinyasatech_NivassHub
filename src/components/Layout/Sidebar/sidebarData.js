@@ -59,7 +59,24 @@ export const sidebarData = [
     key: "community",
     icon: FiUsers,
     color: "#59b36b",
-    children: [],
+    children: [
+      {
+        title: "Amenity Booking",
+        path: "/community/amenity-booking",
+      },
+      {
+        title: "Notices & Communication",
+        path: "/community/notices-communication",
+      },
+      {
+        title: "Polls & Voting",
+        path: "/community/polls-voting",
+      },
+      {
+        title: "Society Documents",
+        path: "/community/society-documents",
+      },
+    ],
   },
 
   {
@@ -78,11 +95,32 @@ export const sidebarData = [
     children: [],
   },
 
-  {
-    title: "System / Platform",
-    key: "system",
-    icon: FiSettings,
-    color: "#7d8794",
-    children: [],
-  },
+{
+  title: "System / Platform",
+  key: "system",
+  icon: FiSettings,
+  color: "#7d8794",
+  children: [
+    {
+      title: "Society Onboarding Review",
+      path: "/system-platform/society-onboarding-review",
+    },
+    {
+      title: "Integrations & APIs",
+      path: "/system-platform/integrations-apis",
+    },
+    {
+      title: "Roles & Permissions",
+      path: "/system-platform/roles-permissions",
+    },
+    {
+      title: "Audit & System Logs",
+      path: "/system-platform/audit-system-logs",
+    },
+    {
+      title: "Billing & Plans",
+      path: "/system-platform/billing-plans",
+    },
+  ],
+},
 ];

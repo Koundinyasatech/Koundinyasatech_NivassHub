@@ -1,9 +1,7 @@
+import EntryChart from "./components/EntryChart";
+
 function VisitorAnalytics() {
-  return (
-    <div>
-      Visitor Analytics
-    </div>
-  );
+  return <EntryChart />;
 }
 
 export default VisitorAnalytics;

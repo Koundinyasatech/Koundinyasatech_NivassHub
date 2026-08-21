@@ -1,0 +1,38 @@
+export const domesticStaffDummyData = [
+  {
+    id: 1,
+    name: "Lakshmi Bai",
+    type: "Maid",
+    mobile: "9876543210",
+    linkedFlats: "A-101, A-304",
+    entryLogCount: 248,
+    status: "Active",
+  },
+  {
+    id: 2,
+    name: "Hari Prasad",
+    type: "Driver",
+    mobile: "9123456780",
+    linkedFlats: "B-306",
+    entryLogCount: 132,
+    status: "Active",
+  },
+  {
+    id: 3,
+    name: "Geeta Devi",
+    type: "Cook",
+    mobile: "9988776655",
+    linkedFlats: "D-103",
+    entryLogCount: 96,
+    status: "Active",
+  },
+  {
+    id: 4,
+    name: "Mohammed Yasin",
+    type: "Driver",
+    mobile: "9001122334",
+    linkedFlats: "A-102",
+    entryLogCount: 41,
+    status: "Inactive",
+  },
+];

@@ -40,8 +40,9 @@ function Table({
                 {emptyMessage}
               </td>
             </tr>
-          ) : (
-            data.map((row, index) => (
+          ) : 
+          (
+            data?.map((row, index) => (
               <tr key={row.id || index}>
                 {columns.map((column) => (
                   <td key={column.key}>
@@ -52,7 +53,8 @@ function Table({
                 ))}
               </tr>
             ))
-          )}
+          )
+          }
         </tbody>
       </table>
     </div>

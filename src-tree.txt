@@ -1,0 +1,1417 @@
+Folder PATH listing
+Volume serial number is 0000019E 36E1:5EFC
+C:\USERS\RAM BHUPAL S\DESKTOP\NIVASHUB\NIVAS-HUB\SRC
+¦   App.jsx
+¦   main.jsx
+¦   
++---app
+¦       store.js
+¦       
++---assets
+¦       login-bg.jpg
+¦       
++---components
+¦   ¦   Loader.jsx
+¦   ¦   ProtectedRoute.jsx
+¦   ¦   
+¦   +---Common
+¦   ¦   +---AdminPage
+¦   ¦   ¦       AdminPage.css
+¦   ¦   ¦       AdminPage.jsx
+¦   ¦   ¦       
+¦   ¦   +---Breadcrumb
+¦   ¦   ¦       Breadcrumb.css
+¦   ¦   ¦       Breadcrumb.jsx
+¦   ¦   ¦       
+¦   ¦   +---Button
+¦   ¦   ¦       Button.css
+¦   ¦   ¦       Button.jsx
+¦   ¦   ¦       
+¦   ¦   +---Card
+¦   ¦   ¦       Card.css
+¦   ¦   ¦       Card.jsx
+¦   ¦   ¦       
+¦   ¦   +---ConfirmDialog
+¦   ¦   ¦       ConfirmDialog.css
+¦   ¦   ¦       ConfirmDialog.jsx
+¦   ¦   ¦       
+¦   ¦   +---DataTable
+¦   ¦   +---EmptyState
+¦   ¦   ¦       EmptyState.css
+¦   ¦   ¦       EmptyState.jsx
+¦   ¦   ¦       
+¦   ¦   +---Form
+¦   ¦   +---Input
+¦   ¦   ¦       Input.css
+¦   ¦   ¦       Input.jsx
+¦   ¦   ¦       
+¦   ¦   +---Loader
+¦   ¦   ¦       Loader.css
+¦   ¦   ¦       Loader.jsx
+¦   ¦   ¦       
+¦   ¦   +---Modal
+¦   ¦   ¦       Modal.css
+¦   ¦   ¦       Modal.jsx
+¦   ¦   ¦       
+¦   ¦   +---PageHeader
+¦   ¦   ¦       PageHeader.css
+¦   ¦   ¦       PageHeader.jsx
+¦   ¦   ¦       
+¦   ¦   +---Pagination
+¦   ¦   ¦       Pagination.css
+¦   ¦   ¦       Pagination.jsx
+¦   ¦   ¦       
+¦   ¦   +---SearchableDropdown
+¦   ¦   ¦       SearchableDropdown.css
+¦   ¦   ¦       SearchableDropdown.jsx
+¦   ¦   ¦       
+¦   ¦   +---SearchBar
+¦   ¦   ¦       SearchBar.css
+¦   ¦   ¦       SearchBar.jsx
+¦   ¦   ¦       
+¦   ¦   +---Select
+¦   ¦   ¦       Select.css
+¦   ¦   ¦       Select.jsx
+¦   ¦   ¦       
+¦   ¦   +---StatusBadge
+¦   ¦   ¦       StatusBadge.css
+¦   ¦   ¦       StatusBadge.jsx
+¦   ¦   ¦       
+¦   ¦   +---Table
+¦   ¦   ¦       Table.css
+¦   ¦   ¦       Table.jsx
+¦   ¦   ¦       
+¦   ¦   +---Tabs
+¦   ¦   ¦       CommonTabs.css
+¦   ¦   ¦       CommonTabs.jsx
+¦   ¦   ¦       
+¦   ¦   +---TextArea
+¦   ¦   ¦       TextArea.css
+¦   ¦   ¦       TextArea.jsx
+¦   ¦   ¦       
+¦   ¦   +---ToggleSwitch
+¦   ¦   ¦       ToggleSwitch.css
+¦   ¦   ¦       ToggleSwitch.jsx
+¦   ¦   ¦       
+¦   ¦   +---UploadBox
+¦   ¦           UploadBox.css
+¦   ¦           UploadBox.jsx
+¦   ¦           
+¦   +---Layout
+¦       +---Header
+¦       +---Navbar
+¦       ¦       Navbar.css
+¦       ¦       Navbar.jsx
+¦       ¦       RoleDropdown.css
+¦       ¦       RoleDropdown.jsx
+¦       ¦       
+¦       +---Sidebar
+¦               Sidebar.css
+¦               Sidebar.jsx
+¦               sidebarData.js
+¦               
++---config
+¦       permissions.js
+¦       
++---constants
++---features
+¦   +---auth
+¦   ¦       authAPI.js
+¦   ¦       authSelectors.js
+¦   ¦       authSlice.js
+¦   ¦       
+¦   +---community
+¦   ¦   +---AmenityBooking
+¦   ¦   ¦   +---constants
+¦   ¦   ¦   ¦       amenityTabs.js
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---Pages
+¦   ¦   ¦   ¦       AmenityBooking.jsx
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---sections
+¦   ¦   ¦       +---AmenityCatalogue
+¦   ¦   ¦       ¦   ¦   AmenityCatalogue.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       ¦           .jsx
+¦   ¦   ¦       ¦           
+¦   ¦   ¦       +---ApprovalQueue
+¦   ¦   ¦       ¦   ¦   ApprovalQueue.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       ¦           .jsx
+¦   ¦   ¦       ¦           
+¦   ¦   ¦       +---BookingCalendar
+¦   ¦   ¦       ¦   ¦   BookingCalendar.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       ¦           .jsx
+¦   ¦   ¦       ¦           
+¦   ¦   ¦       +---BookingFeeConfig
+¦   ¦   ¦       ¦   ¦   BookingFeeConfig.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       ¦           .jsx
+¦   ¦   ¦       ¦           
+¦   ¦   ¦       +---MaintenanceClosure
+¦   ¦   ¦       ¦   ¦   MaintenanceClosure.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       ¦           .jsx
+¦   ¦   ¦       ¦           
+¦   ¦   ¦       +---UtilisationReports
+¦   ¦   ¦           ¦   UtilisationReports.jsx
+¦   ¦   ¦           ¦   
+¦   ¦   ¦           +---components
+¦   ¦   ¦           ¦       .jsx
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---constants
+¦   ¦   ¦           ¦       .jsx
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---data
+¦   ¦   ¦           ¦       .jsx
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---hooks
+¦   ¦   ¦           ¦       .jsx
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---services
+¦   ¦   ¦           ¦       .jsx
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---utils
+¦   ¦   ¦                   .jsx
+¦   ¦   ¦                   
+¦   ¦   +---NoticesCommunication
+¦   ¦   ¦   +---constants
+¦   ¦   ¦   ¦       noticeTabs.js
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---Pages
+¦   ¦   ¦   ¦       NoticesCommunication.jsx
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---sections
+¦   ¦   ¦       +---ComplaintTicketing
+¦   ¦   ¦       ¦   ¦   ComplaintTicketing.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       ¦           .jsx
+¦   ¦   ¦       ¦           
+¦   ¦   ¦       +---EventNotices
+¦   ¦   ¦       ¦   ¦   EventNotices.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       ¦           .jsx
+¦   ¦   ¦       ¦           
+¦   ¦   ¦       +---LostFoundBoard
+¦   ¦   ¦       ¦   ¦   LostFoundBoard.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       ¦           .jsx
+¦   ¦   ¦       ¦           
+¦   ¦   ¦       +---NoticeComposer
+¦   ¦   ¦       ¦   ¦   NoticeComposer.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       ¦           .jsx
+¦   ¦   ¦       ¦           
+¦   ¦   ¦       +---NotificationDeliveryLog
+¦   ¦   ¦       ¦   ¦   NotificationDeliveryLog.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       ¦           .jsx
+¦   ¦   ¦       ¦           
+¦   ¦   ¦       +---SOSAlertDashboard
+¦   ¦   ¦           ¦   SOSAlertDashboard.jsx
+¦   ¦   ¦           ¦   
+¦   ¦   ¦           +---components
+¦   ¦   ¦           ¦       .jsx
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---constants
+¦   ¦   ¦           ¦       .jsx
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---data
+¦   ¦   ¦           ¦       .jsx
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---hooks
+¦   ¦   ¦           ¦       .jsx
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---services
+¦   ¦   ¦           ¦       .jsx
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---utils
+¦   ¦   ¦                   .jsx
+¦   ¦   ¦                   
+¦   ¦   +---PollsVoting
+¦   ¦   ¦   +---constants
+¦   ¦   ¦   ¦       pollTabs.js
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---Pages
+¦   ¦   ¦   ¦       PollsVoting.jsx
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---sections
+¦   ¦   ¦       +---AGMResolutionManager
+¦   ¦   ¦       ¦   ¦   AGMResolutionManager.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   ¦       AGMResolutionActions.jsx
+¦   ¦   ¦       ¦   ¦       AGMResolutionModal.jsx
+¦   ¦   ¦       ¦   ¦       AGMResolutionTable.jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   ¦       agmResolutionConfig.js
+¦   ¦   ¦       ¦   ¦       agmResolutionStatus.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   ¦       agmResolutions.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   ¦       useAGMResolutionManager.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   ¦       agmResolutionService.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       ¦           agmResolutionHelpers.js
+¦   ¦   ¦       ¦           agmResolutionValidation.js
+¦   ¦   ¦       ¦           
+¦   ¦   ¦       +---CommitteeElectionSetup
+¦   ¦   ¦       ¦   ¦   CommitteeElectionSetup.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   ¦       CommitteeElectionModal.jsx
+¦   ¦   ¦       ¦   ¦       CommitteeElectionTable.jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   ¦       committeeElectionConstants.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   ¦       committeeElections.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   ¦       useCommitteeElection.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   ¦       committeeElectionService.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       ¦           committeeElectionUtils.js
+¦   ¦   ¦       ¦           
+¦   ¦   ¦       +---LiveTallyDashboard
+¦   ¦   ¦       ¦   ¦   LiveTallyDashboard.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       +---PollCreator
+¦   ¦   ¦       ¦   ¦   PollCreator.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   ¦       CreatePollModal.jsx
+¦   ¦   ¦       ¦   ¦       PollCreatorActions.jsx
+¦   ¦   ¦       ¦   ¦       PollCreatorFilters.jsx
+¦   ¦   ¦       ¦   ¦       PollCreatorForm.jsx
+¦   ¦   ¦       ¦   ¦       PollCreatorStats.jsx
+¦   ¦   ¦       ¦   ¦       PollCreatorTable.jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   ¦       pollCreatorColumns.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   ¦       pollCreatorData.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   ¦       usePollCreator.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   ¦       pollCreatorService.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       ¦           pollCreatorHelpers.js
+¦   ¦   ¦       ¦           pollCreatorValidation.js
+¦   ¦   ¦       ¦           
+¦   ¦   ¦       +---ResultArchival
+¦   ¦   ¦       ¦   ¦   ResultArchival.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       +---VoterParticipationReport
+¦   ¦   ¦           ¦   VoterParticipationReport.jsx
+¦   ¦   ¦           ¦   
+¦   ¦   ¦           +---components
+¦   ¦   ¦           +---constants
+¦   ¦   ¦           +---data
+¦   ¦   ¦           +---hooks
+¦   ¦   ¦           +---services
+¦   ¦   ¦           +---utils
+¦   ¦   +---SocietyDocuments
+¦   ¦       +---constants
+¦   ¦       ¦       documentTabs.js
+¦   ¦       ¦       
+¦   ¦       +---Pages
+¦   ¦       ¦       SocietyDocuments.jsx
+¦   ¦       ¦       
+¦   ¦       +---sections
+¦   ¦           +---AccessControl
+¦   ¦           ¦   ¦   AccessControl.jsx
+¦   ¦           ¦   ¦   
+¦   ¦           ¦   +---components
+¦   ¦           ¦   +---constants
+¦   ¦           ¦   +---data
+¦   ¦           ¦   +---hooks
+¦   ¦           ¦   +---services
+¦   ¦           ¦   +---utils
+¦   ¦           +---DocumentRepository
+¦   ¦           ¦   ¦   DocumentRepository.jsx
+¦   ¦           ¦   ¦   
+¦   ¦           ¦   +---components
+¦   ¦           ¦   +---constants
+¦   ¦           ¦   +---data
+¦   ¦           ¦   +---hooks
+¦   ¦           ¦   +---services
+¦   ¦           ¦   +---utils
+¦   ¦           +---MaintenanceLogs
+¦   ¦           ¦   ¦   MaintenanceLogs.jsx
+¦   ¦           ¦   ¦   
+¦   ¦           ¦   +---components
+¦   ¦           ¦   +---constants
+¦   ¦           ¦   +---data
+¦   ¦           ¦   +---hooks
+¦   ¦           ¦   +---services
+¦   ¦           ¦   +---utils
+¦   ¦           +---NOCGenerator
+¦   ¦           ¦   ¦   NOCGenerator.jsx
+¦   ¦           ¦   ¦   
+¦   ¦           ¦   +---components
+¦   ¦           ¦   +---constants
+¦   ¦           ¦   +---data
+¦   ¦           ¦   +---hooks
+¦   ¦           ¦   +---services
+¦   ¦           ¦   +---utils
+¦   ¦           +---ReceiptArchive
+¦   ¦           ¦   ¦   ReceiptArchive.jsx
+¦   ¦           ¦   ¦   
+¦   ¦           ¦   +---components
+¦   ¦           ¦   +---constants
+¦   ¦           ¦   +---data
+¦   ¦           ¦   +---hooks
+¦   ¦           ¦   +---services
+¦   ¦           ¦   +---utils
+¦   ¦           +---VersionHistory
+¦   ¦               ¦   VersionHistory.jsx
+¦   ¦               ¦   
+¦   ¦               +---components
+¦   ¦               +---constants
+¦   ¦               +---data
+¦   ¦               +---hooks
+¦   ¦               +---services
+¦   ¦               +---utils
+¦   +---finance
+¦   +---Foundation
+¦   ¦   +---GuardsStaff
+¦   ¦   ¦   +---constants
+¦   ¦   ¦   ¦       guardTabs.js
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---Pages
+¦   ¦   ¦   ¦       GuardsStaff.jsx
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---sections
+¦   ¦   ¦       +---AgencyManagement
+¦   ¦   ¦       ¦   ¦   AgencyManagement.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       +---Attendance
+¦   ¦   ¦       ¦   ¦   Attendance.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   ¦       AttendanceHeader.jsx
+¦   ¦   ¦       ¦   ¦       AttendancePowerBI.jsx
+¦   ¦   ¦       ¦   ¦       AttendanceStats.jsx
+¦   ¦   ¦       ¦   ¦       AttendanceSummaryCard.jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   ¦       attendanceCards.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   ¦       attendanceDummyData.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   ¦       useAttendance.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   ¦       attendanceService.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---styles
+¦   ¦   ¦       ¦   ¦       attendance.css
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       ¦           attendanceHelpers.js
+¦   ¦   ¦       ¦           
+¦   ¦   ¦       +---ClockLogs
+¦   ¦   ¦       ¦   ¦   ClockLogs.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   ¦       ClockLogFilters.jsx
+¦   ¦   ¦       ¦   ¦       ClockLogModal.jsx
+¦   ¦   ¦       ¦   ¦       ClockLogRow.jsx
+¦   ¦   ¦       ¦   ¦       ClockLogsTable.jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   ¦       clockLogColumns.js
+¦   ¦   ¦       ¦   ¦       flagOptions.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   ¦       clockLogsDummyData.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   ¦       useClockLogForm.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   ¦       clockLogService.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---styles
+¦   ¦   ¦       ¦   ¦       clockLogs.css
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       ¦           clockLogValidation.js
+¦   ¦   ¦       ¦           
+¦   ¦   ¦       +---DomesticStaff
+¦   ¦   ¦       ¦   ¦   DomesticStaff.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   ¦       DomesticStaffDetails.jsx
+¦   ¦   ¦       ¦   ¦       DomesticStaffModal.jsx
+¦   ¦   ¦       ¦   ¦       DomesticStaffTable.jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   ¦       domesticStaffColumns.js
+¦   ¦   ¦       ¦   ¦       staffStatusOptions.js
+¦   ¦   ¦       ¦   ¦       staffTypeOptions.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   ¦       domesticStaffDummyData.js
+¦   ¦   ¦       ¦   ¦       linkedFlatsDummyData.js
+¦   ¦   ¦       ¦   ¦       staffTypeDummyData.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   ¦       useDomesticStaffForm.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   ¦       domesticStaffService.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       ¦           domesticStaffValidation.js
+¦   ¦   ¦       ¦           
+¦   ¦   ¦       +---GuardProfiles
+¦   ¦   ¦       ¦   ¦   GuardProfiles.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   ¦       GuardModal.jsx
+¦   ¦   ¦       ¦   ¦       GuardTable.jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   ¦       guardColumns.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   ¦       guardDummyData.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   ¦       useGuardForm.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   ¦       guardService.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       ¦           guardValidation.js
+¦   ¦   ¦       ¦           
+¦   ¦   ¦       +---ShiftRoster
+¦   ¦   ¦           ¦   ShiftRoster.jsx
+¦   ¦   ¦           ¦   
+¦   ¦   ¦           +---components
+¦   ¦   ¦           ¦       ShiftRosterModal.jsx
+¦   ¦   ¦           ¦       ShiftRosterTable.jsx
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---constants
+¦   ¦   ¦           ¦       shiftRosterColumns.js
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---data
+¦   ¦   ¦           ¦       shiftRosterDummyData.js
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---hooks
+¦   ¦   ¦           ¦       useShiftRosterForm.js
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---services
+¦   ¦   ¦           ¦       shiftRosterService.js
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---utils
+¦   ¦   ¦                   shiftRosterValidation.js
+¦   ¦   ¦                   
+¦   ¦   +---ResidentsUsers
+¦   ¦   ¦   +---components
+¦   ¦   ¦   ¦       FamilyMemberCard.css
+¦   ¦   ¦   ¦       FamilyMemberCard.jsx
+¦   ¦   ¦   ¦       KYCReviewDrawer.css
+¦   ¦   ¦   ¦       KYCReviewDrawer.jsx
+¦   ¦   ¦   ¦       KYCTable.jsx
+¦   ¦   ¦   ¦       MoveInMoveOutTable.jsx
+¦   ¦   ¦   ¦       MoveProcessDrawer.jsx
+¦   ¦   ¦   ¦       OwnerDrawer.jsx
+¦   ¦   ¦   ¦       OwnerProfile.jsx
+¦   ¦   ¦   ¦       OwnerTable.jsx
+¦   ¦   ¦   ¦       TenantTable.jsx
+¦   ¦   ¦   ¦       VehicleTable.jsx
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---constants
+¦   ¦   ¦   ¦       kycColumns.js
+¦   ¦   ¦   ¦       moveInMoveOutColumns.js
+¦   ¦   ¦   ¦       ownerColumns.js
+¦   ¦   ¦   ¦       residentTabs.js
+¦   ¦   ¦   ¦       tenantColumns.js
+¦   ¦   ¦   ¦       vehicleColumns.js
+¦   ¦   ¦   ¦       vehicleTypeOptions.js
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---data
+¦   ¦   ¦   ¦       familyMemberDummyData.js
+¦   ¦   ¦   ¦       kycDummyData.js
+¦   ¦   ¦   ¦       moveInMoveOutDummyData.js
+¦   ¦   ¦   ¦       ownerDummyData.js
+¦   ¦   ¦   ¦       tenantDummyData.js
+¦   ¦   ¦   ¦       vehicleDummyData.js
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---hooks
+¦   ¦   ¦   ¦       useKYCForm.js
+¦   ¦   ¦   ¦       useMoveProcessForm.js
+¦   ¦   ¦   ¦       useOwnerForm.js
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---Pages
+¦   ¦   ¦   ¦       ResidentsUsers.jsx
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---sections
+¦   ¦   ¦       +---FamilyMembers
+¦   ¦   ¦       ¦       FamilyMembers.jsx
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---KYCApproval
+¦   ¦   ¦       ¦       KYCApproval.jsx
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---MoveInMoveOut
+¦   ¦   ¦       ¦       MoveInMoveOut.jsx
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---Owners
+¦   ¦   ¦       ¦       Owners.jsx
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---Tenants
+¦   ¦   ¦       ¦       Tenants.jsx
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---Vehicles
+¦   ¦   ¦               Vehicles.jsx
+¦   ¦   ¦               
+¦   ¦   +---SocietyUnits
+¦   ¦       +---components
+¦   ¦       ¦       AdminRoleFilters.jsx
+¦   ¦       ¦       AdminRoleForm.jsx
+¦   ¦       ¦       AdminRoleModal.jsx
+¦   ¦       ¦       AdminRoleTable.jsx
+¦   ¦       ¦       DeleteTowerModal.jsx
+¦   ¦       ¦       OwnershipFilters.jsx
+¦   ¦       ¦       OwnershipTable.jsx
+¦   ¦       ¦       SocietyBasicInfo.jsx
+¦   ¦       ¦       SocietyLogoUpload.jsx
+¦   ¦       ¦       SocietyOfficeInfo.jsx
+¦   ¦       ¦       SocietySettingsForm.jsx
+¦   ¦       ¦       TowerForm.jsx
+¦   ¦       ¦       TowerModal.jsx
+¦   ¦       ¦       TowerTable.jsx
+¦   ¦       ¦       TransferOwnershipForm.jsx
+¦   ¦       ¦       TransferOwnershipModal.jsx
+¦   ¦       ¦       UnitFilters.jsx
+¦   ¦       ¦       UnitForm.jsx
+¦   ¦       ¦       UnitModal.jsx
+¦   ¦       ¦       UnitTable.jsx
+¦   ¦       ¦       
+¦   ¦       +---constants
+¦   ¦       ¦       adminRoleColumns.js
+¦   ¦       ¦       ownershipColumns.js
+¦   ¦       ¦       penaltyOptions.js
+¦   ¦       ¦       roleOptions.js
+¦   ¦       ¦       scopeOptions.js
+¦   ¦       ¦       societyTabs.js
+¦   ¦       ¦       towerColumns.js
+¦   ¦       ¦       unitColumns.js
+¦   ¦       ¦       
+¦   ¦       +---data
+¦   ¦       ¦       adminRoleDummyData.js
+¦   ¦       ¦       ownershipDummyData.js
+¦   ¦       ¦       societySettingsDummyData.js
+¦   ¦       ¦       towerDummyData.js
+¦   ¦       ¦       unitDummyData.js
+¦   ¦       ¦       
+¦   ¦       +---hooks
+¦   ¦       ¦       useAdminRoleForm.js
+¦   ¦       ¦       useSocietyForm.js
+¦   ¦       ¦       useSocietySettingsForm.js
+¦   ¦       ¦       useTower.js
+¦   ¦       ¦       useTowerForm.js
+¦   ¦       ¦       useTransferOwnershipForm.js
+¦   ¦       ¦       useUnitForm.js
+¦   ¦       ¦       
+¦   ¦       +---pages
+¦   ¦       ¦       SocietyUnits.jsx
+¦   ¦       ¦       
+¦   ¦       +---sections
+¦   ¦       ¦   +---AdminRoles
+¦   ¦       ¦   ¦       AdminRoles.css
+¦   ¦       ¦   ¦       AdminRoles.jsx
+¦   ¦       ¦   ¦       
+¦   ¦       ¦   +---OwnershipRecords
+¦   ¦       ¦   ¦       OwnershipRecords.css
+¦   ¦       ¦   ¦       OwnershipRecords.jsx
+¦   ¦       ¦   ¦       
+¦   ¦       ¦   +---SocietyProfile
+¦   ¦       ¦   ¦       SocietyProfile.css
+¦   ¦       ¦   ¦       SocietyProfile.jsx
+¦   ¦       ¦   ¦       SocietyProfileForm.css
+¦   ¦       ¦   ¦       SocietyProfileForm.jsx
+¦   ¦       ¦   ¦       
+¦   ¦       ¦   +---SocietySettings
+¦   ¦       ¦   ¦       SocietySettings.css
+¦   ¦       ¦   ¦       SocietySettings.jsx
+¦   ¦       ¦   ¦       
+¦   ¦       ¦   +---TowerManagement
+¦   ¦       ¦   ¦       TowerManagement.css
+¦   ¦       ¦   ¦       TowerManagement.jsx
+¦   ¦       ¦   ¦       
+¦   ¦       ¦   +---UnitCatalogue
+¦   ¦       ¦           UnitCatalogue.css
+¦   ¦       ¦           UnitCatalogue.jsx
+¦   ¦       ¦           
+¦   ¦       +---services
+¦   ¦       ¦       societyService.js
+¦   ¦       ¦       towerService.js
+¦   ¦       ¦       
+¦   ¦       +---utils
+¦   ¦       +---validation
+¦   ¦               societyValidation.js
+¦   ¦               towerValidation.js
+¦   ¦               unitValidation.js
+¦   ¦               
+¦   +---intelligence
+¦   +---operational
+¦   ¦   +---PackageDelivery
+¦   ¦   ¦   +---constants
+¦   ¦   ¦   ¦       packageTabs.js
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---Pages
+¦   ¦   ¦   ¦       PackageDelivery.jsx
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---sections
+¦   ¦   ¦       +---CourierWhitelist
+¦   ¦   ¦       ¦   ¦   CourierWhitelist.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   ¦       CourierWhitelistModal.jsx
+¦   ¦   ¦       ¦   ¦       CourierWhitelistTable.jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   ¦       courierColumns.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   ¦       courierDummyData.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       useCourierForm.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       ¦           .jsx
+¦   ¦   ¦       ¦           
+¦   ¦   ¦       +---DeliveryStatusBoard
+¦   ¦   ¦       ¦   ¦   DeliveryStatusBoard.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       StatusColumn.jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       deliveryStatusDummyData.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       ¦           .jsx
+¦   ¦   ¦       ¦           
+¦   ¦   ¦       +---HandoverAudit
+¦   ¦   ¦       ¦   ¦   HandoverAudit.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       HandoverAuditTable.jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       handoverColumns.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       handoverDummyData.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       ¦           .jsx
+¦   ¦   ¦       ¦           
+¦   ¦   ¦       +---PackageIntakeLog
+¦   ¦   ¦       ¦   ¦   PackageIntakeLog.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       PackageIntakeTable.jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       packageColumns.js
+¦   ¦   ¦       ¦   ¦       packageStatusOptions.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   ¦       packageIntakeDummyData.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       ¦           .jsx
+¦   ¦   ¦       ¦           
+¦   ¦   ¦       +---SmartLockerConfig
+¦   ¦   ¦       ¦   ¦   SmartLockerConfig.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   ¦       SmartLockerModal.jsx
+¦   ¦   ¦       ¦   ¦       SmartLockerTable.jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   ¦       lockerColumns.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   ¦       lockerDummyData.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   ¦       useLockerForm.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   ¦       lockerService.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       ¦           validateLocker.js
+¦   ¦   ¦       ¦           
+¦   ¦   ¦       +---UncollectedAlerts
+¦   ¦   ¦           ¦   UncollectedAlerts.jsx
+¦   ¦   ¦           ¦   
+¦   ¦   ¦           +---components
+¦   ¦   ¦           ¦       .jsx
+¦   ¦   ¦           ¦       ReminderSettings.jsx
+¦   ¦   ¦           ¦       UncollectedAlertsTable.jsx
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---constants
+¦   ¦   ¦           ¦       .jsx
+¦   ¦   ¦           ¦       uncollectedAlertColumns.js
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---data
+¦   ¦   ¦           ¦       .jsx
+¦   ¦   ¦           ¦       uncollectedAlertsDummyData.js
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---hooks
+¦   ¦   ¦           ¦       .jsx
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---services
+¦   ¦   ¦           ¦       .jsx
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---utils
+¦   ¦   ¦                   .jsx
+¦   ¦   ¦                   
+¦   ¦   +---ParkingManagement
+¦   ¦   ¦   +---constants
+¦   ¦   ¦   ¦       parkingTabs.js
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---Pages
+¦   ¦   ¦   ¦       ParkingManagement.jsx
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---sections
+¦   ¦   ¦       +---ANPRLogs
+¦   ¦   ¦       ¦   ¦   ANPRLogs.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   ¦       anprColumns.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   ¦       anprDummyData.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       ¦           .jsx
+¦   ¦   ¦       ¦           
+¦   ¦   ¦       +---MultiVehicleManagement
+¦   ¦   ¦       ¦   ¦   MultiVehicleManagement.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   ¦       VehicleRequestCard.jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   ¦       multiVehicleDummyData.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       ¦           .jsx
+¦   ¦   ¦       ¦           
+¦   ¦   ¦       +---ParkingDuesConfig
+¦   ¦   ¦       ¦   ¦   ParkingDuesConfig.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   ¦       ParkingChargeModal.jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   ¦       parkingChargeColumns.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   ¦       parkingChargeDummyData.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       ¦           .jsx
+¦   ¦   ¦       ¦           
+¦   ¦   ¦       +---SlotAllocation
+¦   ¦   ¦       ¦   ¦   SlotAllocation.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   ¦       SlotAllocationModal.jsx
+¦   ¦   ¦       ¦   ¦       SlotAllocationTable.jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   ¦       slotAllocationColumns.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   ¦       slotAllocationDummyData.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   ¦       useSlotAllocationForm.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       ¦           .jsx
+¦   ¦   ¦       ¦           
+¦   ¦   ¦       +---SlotCatalogue
+¦   ¦   ¦       ¦   ¦   SlotCatalogue.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   ¦       SlotCatalogueTable.jsx
+¦   ¦   ¦       ¦   ¦       SlotModal.jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   ¦       slotColumns.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   ¦       slotDummyData.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   ¦       useSlotForm.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   ¦       .jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       ¦           .jsx
+¦   ¦   ¦       ¦           
+¦   ¦   ¦       +---VisitorParking
+¦   ¦   ¦           ¦   VisitorParking.jsx
+¦   ¦   ¦           ¦   
+¦   ¦   ¦           +---components
+¦   ¦   ¦           ¦       VisitorParkingModal.jsx
+¦   ¦   ¦           ¦       VisitorParkingTable.jsx
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---constants
+¦   ¦   ¦           ¦       visitorParkingColumns.js
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---data
+¦   ¦   ¦           ¦       visitorParkingDummyData.js
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---hooks
+¦   ¦   ¦           ¦       useVisitorParkingForm.js
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---services
+¦   ¦   ¦                   .jsx
+¦   ¦   ¦                   
+¦   ¦   +---SmartAccessControl
+¦   ¦   ¦   +---constants
+¦   ¦   ¦   ¦       smartAccessTabs.js
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---Pages
+¦   ¦   ¦   ¦       SmartAccessControl.jsx
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---sections
+¦   ¦   ¦       +---AccessAnomalyAI
+¦   ¦   ¦       ¦   ¦   AccessAnomalyAI.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   ¦       AccessAnomalyTable.jsx
+¦   ¦   ¦       ¦   ¦       ReviewAlertModal.jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   ¦       accessAnomalyColumns.js
+¦   ¦   ¦       ¦   ¦       statusOptions.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   ¦       accessAnomalyData.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       +---BoomBarrierConfig
+¦   ¦   ¦       ¦   ¦   BoomBarrierConfig.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   ¦       BoomBarrierTable.jsx
+¦   ¦   ¦       ¦   ¦       EditBarrierModal.jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   ¦       boomBarrierColumns.js
+¦   ¦   ¦       ¦   ¦       connectionOptions.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   ¦       boomBarrierData.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       +---FaceRecognitionEnrollment
+¦   ¦   ¦       ¦   ¦   FaceRecognitionEnrollment.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   ¦       FaceRecognitionTable.jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   ¦       faceRecognitionColumns.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   ¦       faceRecognitionData.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       +---MultiGateLogs
+¦   ¦   ¦       ¦   ¦   MultiGateLogs.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   ¦       MultiGateLogTable.jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   ¦       multiGateLogColumns.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   ¦       multiGateLogData.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       +---QRGatePassManagement
+¦   ¦   ¦       ¦   ¦   QRGatePassManagement.jsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---components
+¦   ¦   ¦       ¦   ¦       QRGatePassTable.jsx
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---constants
+¦   ¦   ¦       ¦   ¦       passTypeOptions.js
+¦   ¦   ¦       ¦   ¦       qrGatePassColumns.js
+¦   ¦   ¦       ¦   ¦       statusOptions.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---data
+¦   ¦   ¦       ¦   ¦       qrGatePassData.js
+¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦       ¦   +---hooks
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦   +---utils
+¦   ¦   ¦       +---VideoIntercomSettings
+¦   ¦   ¦           ¦   VideoIntercomSettings.jsx
+¦   ¦   ¦           ¦   
+¦   ¦   ¦           +---components
+¦   ¦   ¦           ¦       EditVideoIntercomModal.jsx
+¦   ¦   ¦           ¦       VideoIntercomTable.jsx
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---constants
+¦   ¦   ¦           ¦       videoIntercomColumns.js
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---data
+¦   ¦   ¦           ¦       videoIntercomData.js
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---hooks
+¦   ¦   ¦           +---services
+¦   ¦   ¦           +---utils
+¦   ¦   +---VisitorManagement
+¦   ¦       +---constants
+¦   ¦       ¦       visitorTabs.js
+¦   ¦       ¦       
+¦   ¦       +---Pages
+¦   ¦       ¦       VisitorManagement.jsx
+¦   ¦       ¦       
+¦   ¦       +---sections
+¦   ¦           +---CabDeliveryOverrides
+¦   ¦           ¦   ¦   CabDeliveryOverrides.jsx
+¦   ¦           ¦   ¦   
+¦   ¦           ¦   +---components
+¦   ¦           ¦   ¦       OverrideFilterBar.jsx
+¦   ¦           ¦   ¦       OverrideTable.jsx
+¦   ¦           ¦   ¦       ServiceTypeBadge.jsx
+¦   ¦           ¦   ¦       WorkflowBadge.jsx
+¦   ¦           ¦   ¦       
+¦   ¦           ¦   +---constants
+¦   ¦           ¦   ¦       overrideColumns.jsx
+¦   ¦           ¦   ¦       
+¦   ¦           ¦   +---data
+¦   ¦           ¦   ¦       overrideData.js
+¦   ¦           ¦   ¦       
+¦   ¦           ¦   +---hooks
+¦   ¦           ¦   ¦       .jsx
+¦   ¦           ¦   ¦       
+¦   ¦           ¦   +---services
+¦   ¦           ¦   ¦       .jsx
+¦   ¦           ¦   ¦       
+¦   ¦           ¦   +---utils
+¦   ¦           ¦           .jsx
+¦   ¦           ¦           
+¦   ¦           +---EntryExitAudit
+¦   ¦           ¦   ¦   EntryExitAudit.jsx
+¦   ¦           ¦   ¦   
+¦   ¦           ¦   +---components
+¦   ¦           ¦   ¦       AuditFilterBar.jsx
+¦   ¦           ¦   ¦       AuditTable.jsx
+¦   ¦           ¦   ¦       EntryExitAudit.jsx
+¦   ¦           ¦   ¦       EntryMethodBadge.jsx
+¦   ¦           ¦   ¦       
+¦   ¦           ¦   +---constants
+¦   ¦           ¦   ¦       auditColumns.jsx
+¦   ¦           ¦   ¦       
+¦   ¦           ¦   +---data
+¦   ¦           ¦   ¦       auditData.js
+¦   ¦           ¦   ¦       
+¦   ¦           ¦   +---hooks
+¦   ¦           ¦   ¦       .jsx
+¦   ¦           ¦   ¦       
+¦   ¦           ¦   +---services
+¦   ¦           ¦   ¦       .jsx
+¦   ¦           ¦   ¦       
+¦   ¦           ¦   +---utils
+¦   ¦           ¦           .jsx
+¦   ¦           ¦           
+¦   ¦           +---FlaggedEntries
+¦   ¦           ¦   ¦   FlaggedEntries.jsx
+¦   ¦           ¦   ¦   
+¦   ¦           ¦   +---constants
+¦   ¦           ¦   ¦       flaggedColumns.jsx
+¦   ¦           ¦   ¦       
+¦   ¦           ¦   +---data
+¦   ¦           ¦   ¦       flaggedEntriesData.js
+¦   ¦           ¦   ¦       
+¦   ¦           ¦   +---hooks
+¦   ¦           ¦   ¦       .jsx
+¦   ¦           ¦   ¦       
+¦   ¦           ¦   +---services
+¦   ¦           ¦   ¦       .jsx
+¦   ¦           ¦   ¦       
+¦   ¦           ¦   +---utils
+¦   ¦           ¦           .jsx
+¦   ¦           ¦           
+¦   ¦           +---FrequentVisitorWhitelist
+¦   ¦           ¦   ¦   FrequentVisitorWhitelist.jsx
+¦   ¦           ¦   ¦   
+¦   ¦           ¦   +---components
+¦   ¦           ¦   ¦       CategoryBadge.jsx
+¦   ¦           ¦   ¦       StatusBadge.jsx
+¦   ¦           ¦   ¦       WhitelistFilterBar.jsx
+¦   ¦           ¦   ¦       WhitelistTable.jsx
+¦   ¦           ¦   ¦       
+¦   ¦           ¦   +---constants
+¦   ¦           ¦   ¦       whitelistColumns.jsx
+¦   ¦           ¦   ¦       
+¦   ¦           ¦   +---data
+¦   ¦           ¦   ¦       whitelistData.js
+¦   ¦           ¦   ¦       
+¦   ¦           ¦   +---hooks
+¦   ¦           ¦   ¦       .jsx
+¦   ¦           ¦   ¦       
+¦   ¦           ¦   +---services
+¦   ¦           ¦   ¦       .jsx
+¦   ¦           ¦   ¦       
+¦   ¦           ¦   +---utils
+¦   ¦           ¦           .jsx
+¦   ¦           ¦           
+¦   ¦           +---PreApprovalReview
+¦   ¦           ¦   ¦   PreApprovalReview.jsx
+¦   ¦           ¦   ¦   
+¦   ¦           ¦   +---components
+¦   ¦           ¦   ¦       FilterBar.jsx
+¦   ¦           ¦   ¦       Pagination.jsx
+¦   ¦           ¦   ¦       PreApprovalTable.jsx
+¦   ¦           ¦   ¦       PurposeBadge.jsx
+¦   ¦           ¦   ¦       StatusBadge.jsx
+¦   ¦           ¦   ¦       
+¦   ¦           ¦   +---constants
+¦   ¦           ¦   ¦       tableColumns.jsx
+¦   ¦           ¦   ¦       
+¦   ¦           ¦   +---data
+¦   ¦           ¦   ¦       PreApprovalData.js
+¦   ¦           ¦   ¦       
+¦   ¦           ¦   +---hooks
+¦   ¦           ¦   ¦       .jsx
+¦   ¦           ¦   ¦       
+¦   ¦           ¦   +---services
+¦   ¦           ¦   ¦       .jsx
+¦   ¦           ¦   ¦       
+¦   ¦           ¦   +---utils
+¦   ¦           ¦           .jsx
+¦   ¦           ¦           
+¦   ¦           +---VisitorAnalytics
+¦   ¦               ¦   VisitorAnalytics.jsx
+¦   ¦               ¦   
+¦   ¦               +---components
+¦   ¦               ¦       AnalyticsCard.jsx
+¦   ¦               ¦       EntryChart.jsx
+¦   ¦               ¦       
+¦   ¦               +---data
+¦   ¦               ¦       analyticsCards.js
+¦   ¦               ¦       analyticsChartData.js
+¦   ¦               ¦       
+¦   ¦               +---hooks
+¦   ¦               ¦       .jsx
+¦   ¦               ¦       
+¦   ¦               +---services
+¦   ¦               ¦       .jsx
+¦   ¦               ¦       
+¦   ¦               +---utils
+¦   ¦                       .jsx
+¦   ¦                       
+¦   +---system
++---hooks
+¦       useAppDispatch.js
+¦       useAppSelector.js
+¦       useAuth.js
+¦       
++---layouts
+¦       AdminLayout.css
+¦       AdminLayout.jsx
+¦       
++---pages
+¦   +---Login
+¦           Login.css
+¦           Login.jsx
+¦           
++---routes
+¦       AppRoutes.jsx
+¦       
++---services
+¦       axiosInstance.js
+¦       
++---styles
+¦       global.css
+¦       themes.css
+¦       variables.css
+¦       
++---utils
+        storage.js
+        
