@@ -35,7 +35,7 @@ function AGMResolutionTable({
     },
     {
       key: "actions",
-      title: "",
+      title: "ACTIONS",
       render: (row) => (
         <AGMResolutionActions
           resolution={row}

@@ -206,13 +206,137 @@ body.dark-theme {
 }
 .summary-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 28px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
   margin-bottom: 24px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
+  .summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
   .summary-grid {
     grid-template-columns: 1fr;
   }
+}
+/* ===========================
+   Society View Details
+=========================== */
+
+.society-stat-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.society-stat-label {
+  color: #7b8494;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.society-stat-value {
+  color: var(--text-dark);
+  font-size: 44px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.society-stat-secondary {
+  color: var(--text-gray);
+  font-size: 16px;
+}
+
+.society-detail-grid {
+  row-gap: 28px;
+}
+
+.society-detail-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.society-detail-label {
+  color: var(--text-gray);
+  font-size: 16px;
+}
+
+.society-detail-value {
+  color: var(--text-dark);
+  font-size: 20px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.society-detail-description {
+  margin-top: 28px;
+  color: var(--text-gray);
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+@media (max-width: 768px) {
+  .society-stat-value {
+    font-size: 40px;
+  }
+
+  .society-detail-value {
+    font-size: 18px;
+  }
+}
+/* ===========================
+   Society Context Bar
+=========================== */
+
+.society-context-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: #e5e7eb;
+}
+
+.society-context-dot {
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.society-context-label {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.society-context-name {
+  color: #111827;
+  font-size: 14px;
+}
+
+.society-context-location {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.society-context-switch {
+  margin-left: 8px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #c75a28;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.society-context-switch:hover {
+  color: #a94720;
 }

@@ -1,0 +1,566 @@
+/* =====================================================
+   VERIFY OTP PAGE
+===================================================== */
+
+.verify-otp-page {
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+
+  display: flex;
+
+  overflow: hidden;
+
+  background: #f8f3ed;
+}
+
+/* =====================================================
+   LEFT SECTION
+===================================================== */
+
+.verify-otp-left {
+  flex: 1.35;
+
+  position: relative;
+
+  min-width: 0;
+  height: 100%;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+}
+
+.verify-otp-left .overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    rgba(20, 20, 20, 0.25),
+    rgba(20, 20, 20, 0.35)
+  );
+}
+
+.verify-otp-left .hero-content {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+  height: 100%;
+
+  box-sizing: border-box;
+
+  padding: clamp(28px, 4vw, 55px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* =====================================================
+   BRAND
+===================================================== */
+
+.verify-otp-left .brand h1 {
+  margin: 0;
+
+  font-size: clamp(32px, 3.2vw, 48px);
+
+  line-height: 1;
+
+  font-weight: 700;
+}
+
+.verify-otp-left .brand h1 span {
+  color: #d65a11;
+}
+
+.verify-otp-left .brand p {
+  margin: 8px 0 0;
+
+  font-size: clamp(12px, 1vw, 16px);
+}
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.verify-otp-left .hero-main {
+  max-width: 700px;
+}
+
+.verify-otp-left .hero-main h2 {
+  margin: 0 0 20px;
+
+  font-size: clamp(36px, 4.2vw, 60px);
+
+  line-height: 1.12;
+}
+
+.verify-otp-left .hero-text {
+  margin: 0;
+
+  max-width: 560px;
+
+  font-size: clamp(14px, 1.35vw, 20px);
+
+  line-height: 1.6;
+}
+
+/* =====================================================
+   STATS
+===================================================== */
+
+.verify-otp-left .stats-bar {
+  width: 100%;
+
+  max-width: 700px;
+
+  display: flex;
+
+  gap: 8px;
+
+  padding: 10px 12px;
+
+  box-sizing: border-box;
+
+  background: white;
+
+  color: black;
+
+  border-radius: 10px;
+
+  justify-content: space-around;
+
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.verify-otp-left .stat-item {
+  flex: 1;
+
+  text-align: center;
+
+  padding: 8px;
+
+  border-radius: 10px;
+}
+
+.verify-otp-left .stat-item h3 {
+  margin: 0 0 4px;
+
+  color: #d65a11;
+
+  font-size: clamp(16px, 1.5vw, 22px);
+}
+
+.verify-otp-left .stat-item p {
+  margin: 0;
+
+  color: #555;
+
+  font-size: clamp(10px, 0.9vw, 13px);
+}
+
+/* =====================================================
+   RIGHT SECTION
+===================================================== */
+
+.verify-otp-right {
+  flex: 0.8;
+
+  min-width: 420px;
+
+  height: 100%;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  flex-direction: column;
+
+  padding: 24px;
+
+  overflow: hidden;
+}
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.verify-otp-card {
+  width: min(100%, 480px);
+
+  box-sizing: border-box;
+
+  background: white;
+
+  padding: clamp(28px, 3vw, 50px);
+
+  border-radius: 24px;
+
+  box-shadow:
+    0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.verify-otp-card .logo-box {
+  text-align: center;
+
+  margin-bottom: 24px;
+}
+
+.verify-otp-card .logo-box h2 {
+  margin: 0;
+
+  font-size: clamp(24px, 2vw, 30px);
+}
+
+.verify-otp-card .logo-box h2 span {
+  color: #d65a11;
+}
+
+.verify-otp-card .logo-box p {
+  margin: 7px 0 0;
+
+  color: #666;
+
+  font-size: 13px;
+}
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.verify-otp-card h1 {
+  margin: 0 0 8px;
+
+  text-align: center;
+
+  font-size: clamp(24px, 2.2vw, 32px);
+}
+
+.verify-otp-description {
+  margin: 0 0 24px;
+
+  text-align: center;
+
+  color: #666;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+/* =====================================================
+   OTP INPUT
+===================================================== */
+
+.otp-input-group {
+  margin-bottom: 18px;
+}
+
+.otp-input-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-weight: 600;
+
+  color: #333;
+
+  font-size: 14px;
+}
+
+.otp-input {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 15px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 12px;
+
+  background: white;
+
+  font-size: 22px;
+
+  font-weight: 600;
+
+  letter-spacing: 8px;
+
+  text-align: center;
+
+  color: #333;
+
+  outline: none;
+}
+
+.otp-input:focus {
+  border-color: #d65a11;
+
+  box-shadow:
+    0 0 0 3px rgba(214, 90, 17, 0.1);
+}
+
+/* =====================================================
+   VERIFY BUTTON
+===================================================== */
+
+.verify-otp-button {
+  width: 100%;
+
+  padding: 15px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: #d65a11;
+
+  color: white;
+
+  font-size: 17px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.verify-otp-button:hover {
+  background: #b94808;
+}
+
+.verify-otp-button:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+}
+
+/* =====================================================
+   RESEND
+===================================================== */
+
+.otp-resend-section {
+  margin-top: 20px;
+
+  text-align: center;
+}
+
+.otp-resend-text {
+  margin: 0 0 8px;
+
+  color: #777;
+
+  font-size: 13px;
+}
+
+.otp-resend-button {
+  border: none;
+
+  background: transparent;
+
+  color: #d65a11;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.otp-resend-button:disabled {
+  color: #999;
+
+  cursor: not-allowed;
+}
+
+/* =====================================================
+   ERROR
+===================================================== */
+
+.verify-otp-error {
+  margin: 10px 0 18px;
+
+  padding: 10px 12px;
+
+  border-radius: 8px;
+
+  background: #fff1f2;
+
+  border: 1px solid #fecdd3;
+
+  color: #be123c;
+
+  font-size: 13px;
+
+  line-height: 1.4;
+}
+
+/* =====================================================
+   BACK
+===================================================== */
+
+.verify-otp-back {
+  margin-top: 20px;
+
+  text-align: center;
+}
+
+.verify-otp-back button {
+  border: none;
+
+  background: transparent;
+
+  color: #d65a11;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.verify-otp-back button:hover {
+  text-decoration: underline;
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.verify-otp-footer {
+  margin: 16px 0 0;
+
+  color: #777;
+
+  font-size: 12px;
+
+  text-align: center;
+}
+
+/* =====================================================
+   LAPTOP
+===================================================== */
+
+@media (max-width: 1200px) {
+  .verify-otp-left {
+    flex: 1.1;
+  }
+
+  .verify-otp-right {
+    flex: 0.9;
+
+    min-width: 390px;
+  }
+
+  .verify-otp-left .hero-content {
+    padding: 32px;
+  }
+
+  .verify-otp-card {
+    padding: 32px;
+  }
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+  .verify-otp-page {
+    overflow-y: auto;
+
+    min-height: 100vh;
+
+    height: auto;
+  }
+
+  .verify-otp-left {
+    display: none;
+  }
+
+  .verify-otp-right {
+    width: 100%;
+
+    min-width: 0;
+
+    min-height: 100vh;
+
+    height: 100vh;
+
+    height: 100dvh;
+
+    padding: 20px;
+  }
+
+  .verify-otp-card {
+    width: min(100%, 480px);
+  }
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 500px) {
+  .verify-otp-right {
+    padding: 16px;
+  }
+
+  .verify-otp-card {
+    padding: 24px 20px;
+
+    border-radius: 18px;
+  }
+
+  .verify-otp-card .logo-box {
+    margin-bottom: 20px;
+  }
+
+  .verify-otp-card h1 {
+    font-size: 25px;
+  }
+
+  .verify-otp-description {
+    font-size: 13px;
+  }
+
+  .otp-input {
+    font-size: 20px;
+
+    letter-spacing: 6px;
+  }
+
+  .verify-otp-footer {
+    font-size: 11px;
+  }
+}
+
+/* =====================================================
+   VERY SMALL MOBILE
+===================================================== */
+
+@media (max-width: 360px) {
+  .verify-otp-card {
+    padding: 20px 16px;
+  }
+
+  .otp-input {
+    font-size: 18px;
+
+    letter-spacing: 4px;
+  }
+}

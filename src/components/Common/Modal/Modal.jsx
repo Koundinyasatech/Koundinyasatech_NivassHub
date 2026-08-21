@@ -7,7 +7,7 @@ function Modal({
   title,
   children,
   footer,
-  width = "600px",
+  size = "medium",
 }) {
   const visible = isOpen ?? open;
 
@@ -19,14 +19,14 @@ function Modal({
       onClick={onClose}
     >
       <div
-        className="modal-container"
-        style={{ width }}
+        className={`modal-container modal-${size}`}
         onClick={(e) => e.stopPropagation()}
       >
         <div className="modal-header">
           <h2>{title}</h2>
 
           <button
+            type="button"
             className="modal-close"
             onClick={onClose}
           >

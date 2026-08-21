@@ -1,19 +1,35 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { validateSocietyForm } from "../validation/societyValidation";
 
-function useSocietyForm() {
-  const initialState = {
-    societyName: "",
-    registrationNumber: "",
-    address: "",
+function createInitialState(society) {
+  return {
+    societyName: society?.society ?? "",
+    registrationNumber: society?.registrationNumber ?? "",
+    address: society
+      ? `${society.city}, ${society.state}, ${society.country}`
+      : "",
     officeOpen: "",
     officeClose: "",
     bylawsNote: "",
     logo: null,
   };
+}
 
-  const [formData, setFormData] = useState(initialState);
+function useSocietyForm(society) {
+  const [formData, setFormData] = useState(
+    () => createInitialState(society)
+  );
+
   const [errors, setErrors] = useState({});
+
+  /*
+   * When the selected society changes,
+   * load that society's information into the form.
+   */
+  useEffect(() => {
+    setFormData(createInitialState(society));
+    setErrors({});
+  }, [society?.id]);
 
   const handleChange = (field, value) => {
     setFormData((prev) => ({
@@ -30,12 +46,13 @@ function useSocietyForm() {
   };
 
   const resetForm = () => {
-    setFormData(initialState);
+    setFormData(createInitialState(society));
     setErrors({});
   };
 
   const handleSubmit = () => {
-    const validationErrors = validateSocietyForm(formData);
+    const validationErrors =
+      validateSocietyForm(formData);
 
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
@@ -44,9 +61,11 @@ function useSocietyForm() {
 
     const payload = new FormData();
 
-    Object.entries(formData).forEach(([key, value]) => {
-      payload.append(key, value);
-    });
+    Object.entries(formData).forEach(
+      ([key, value]) => {
+        payload.append(key, value);
+      }
+    );
 
     console.log("Form Submitted");
 

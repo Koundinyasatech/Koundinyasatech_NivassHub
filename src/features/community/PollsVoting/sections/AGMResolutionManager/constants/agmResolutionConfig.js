@@ -21,7 +21,7 @@ export const agmResolutionColumns = [
   },
   {
     key: "actions",
-    label: "",
+    label: "ACTIONS",
   },
 ];
 

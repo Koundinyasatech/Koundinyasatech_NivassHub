@@ -8,6 +8,7 @@ function AGMResolutionModal({
   open,
   resolution,
   onClose,
+  onSave,
 }) {
   const [formData, setFormData] = useState({
     resolution: "",
@@ -17,6 +18,8 @@ function AGMResolutionModal({
   });
 
   useEffect(() => {
+    if (!open) return;
+
     if (resolution) {
       setFormData({
         resolution: resolution.resolution || "",
@@ -49,12 +52,16 @@ function AGMResolutionModal({
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log(
-      resolution
-        ? "Updating resolution:"
-        : "Creating resolution:",
-      formData
-    );
+    if (!formData.resolution.trim()) {
+      return;
+    }
+
+    if (onSave) {
+      onSave({
+        ...formData,
+        id: resolution?.id,
+      });
+    }
 
     onClose();
   };
@@ -68,7 +75,7 @@ function AGMResolutionModal({
           ? "Edit resolution"
           : "Draft resolution"
       }
-      width="530px"
+      width="560px"
       footer={
         <>
           <Button
@@ -79,7 +86,8 @@ function AGMResolutionModal({
           </Button>
 
           <Button
-            onClick={handleSubmit}
+            type="submit"
+            form="agm-resolution-form"
           >
             {resolution
               ? "Save changes"
@@ -89,11 +97,17 @@ function AGMResolutionModal({
       }
     >
       <form
-        className="agm-resolution-form"
+        id="agm-resolution-form"
         onSubmit={handleSubmit}
       >
-        <div className="agm-form-group">
-          <label className="agm-form-label">
+        <div style={{ marginBottom: "20px" }}>
+          <label
+            style={{
+              display: "block",
+              marginBottom: "8px",
+              fontWeight: 600,
+            }}
+          >
             RESOLUTION TEXT
           </label>
 
@@ -101,19 +115,38 @@ function AGMResolutionModal({
             name="resolution"
             value={formData.resolution}
             onChange={handleChange}
-            className="agm-resolution-textarea"
             placeholder="Enter resolution text"
             rows={4}
+            required
+            style={{
+              width: "100%",
+              boxSizing: "border-box",
+              padding: "12px",
+              border: "1px solid var(--border)",
+              borderRadius: "var(--radius-sm)",
+              resize: "vertical",
+              fontFamily: "inherit",
+              fontSize: "14px",
+            }}
           />
         </div>
 
-        <div className="agm-form-row">
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns:
+              "repeat(2, minmax(0, 1fr))",
+            gap: "16px",
+            marginBottom: "20px",
+          }}
+        >
           <Input
             label="QUORUM REQUIRED"
             name="quorumRequired"
             value={formData.quorumRequired}
             onChange={handleChange}
             placeholder="51%"
+            required
           />
 
           <Input
@@ -122,11 +155,18 @@ function AGMResolutionModal({
             value={formData.quorumMet}
             onChange={handleChange}
             placeholder="0%"
+            required
           />
         </div>
 
-        <div className="agm-form-group">
-          <label className="agm-form-label">
+        <div>
+          <label
+            style={{
+              display: "block",
+              marginBottom: "8px",
+              fontWeight: 600,
+            }}
+          >
             STATUS
           </label>
 
@@ -134,7 +174,15 @@ function AGMResolutionModal({
             name="status"
             value={formData.status}
             onChange={handleChange}
-            className="agm-form-select"
+            style={{
+              width: "100%",
+              boxSizing: "border-box",
+              padding: "12px",
+              border: "1px solid var(--border)",
+              borderRadius: "var(--radius-sm)",
+              background: "var(--white)",
+              fontSize: "14px",
+            }}
           >
             <option value="Pending re-vote">
               Pending re-vote

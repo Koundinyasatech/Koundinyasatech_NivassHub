@@ -1,9 +1,11 @@
 .sidebar {
-  width: 280px;
+  width: 290px;
   background: #fff;
-  border-right: 1px solid #eee;
-  height: 100vh;
+  border-right: 1px solid #e5e5e5;
+  height: 100%;
   overflow-y: auto;
+  overflow-x: hidden;
+  flex-shrink: 0;
 }
 
 .sidebar-section {
@@ -36,10 +38,11 @@
 
 .submenu-item {
   display: block;
-  padding: 14px 65px;
+  padding: 14px 45px;
   text-decoration: none;
   color: #555;
-  transition: .2s;
+  transition: 0.2s;
+  white-space: nowrap;
 }
 
 .submenu-item:hover {
@@ -51,10 +54,4 @@
   font-weight: bold;
   border-left: 3px solid #d96d2c;
   background: #faf5ef;
-}
-.sidebar {
-  width: 290px;
-  background: white;
-  border-right: 1px solid #e5e5e5;
-  overflow-y: auto;
 }

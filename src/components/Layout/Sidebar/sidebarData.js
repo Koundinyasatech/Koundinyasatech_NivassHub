@@ -95,11 +95,32 @@ export const sidebarData = [
     children: [],
   },
 
-  {
-    title: "System / Platform",
-    key: "system",
-    icon: FiSettings,
-    color: "#7d8794",
-    children: [],
-  },
+{
+  title: "System / Platform",
+  key: "system",
+  icon: FiSettings,
+  color: "#7d8794",
+  children: [
+    {
+      title: "Society Onboarding Review",
+      path: "/system-platform/society-onboarding-review",
+    },
+    {
+      title: "Integrations & APIs",
+      path: "/system-platform/integrations-apis",
+    },
+    {
+      title: "Roles & Permissions",
+      path: "/system-platform/roles-permissions",
+    },
+    {
+      title: "Audit & System Logs",
+      path: "/system-platform/audit-system-logs",
+    },
+    {
+      title: "Billing & Plans",
+      path: "/system-platform/billing-plans",
+    },
+  ],
+},
 ];

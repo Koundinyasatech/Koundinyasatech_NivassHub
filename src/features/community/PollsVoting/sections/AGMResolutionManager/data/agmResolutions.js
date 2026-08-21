@@ -1,4 +1,4 @@
-export const agmResolutionData = [
+export const agmResolutions = [
   {
     id: 1,
     resolution: "Approve FY26-27 annual budget",
@@ -13,6 +13,6 @@ export const agmResolutionData = [
     quorumRequired: "51%",
     quorumMet: "38%",
     date: "2026-07-15",
-    status: "Pending re-vote",
+    status: "Pending Re-Vote",
   },
 ];

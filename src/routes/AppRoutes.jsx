@@ -5,7 +5,20 @@ import {
   Navigate,
 } from "react-router-dom";
 
+/* =========================
+   Authentication
+========================= */
 import Login from "../pages/Login/Login";
+import PhoneLogin from "../pages/Login/PhoneLogin";
+import ForgotPassword from "../pages/ForgotPassword/ForgotPassword";
+import VerifyOTP from "../pages/ForgotPassword/VerifyOTP";
+import ResetPassword from "../pages/ForgotPassword/ResetPassword";
+
+/* =========================
+   Profile
+========================= */
+import Profile from "../pages/Profile/Profile";
+
 import ProtectedRoute from "../components/ProtectedRoute";
 import AdminLayout from "../layouts/AdminLayout";
 
@@ -32,17 +45,65 @@ import NoticesCommunication from "../features/community/NoticesCommunication/Pag
 import PollsVoting from "../features/community/PollsVoting/Pages/PollsVoting";
 import SocietyDocuments from "../features/community/SocietyDocuments/Pages/SocietyDocuments";
 
+/* =========================
+   System / Platform
+========================= */
+import SocietyOnboardingReview from "../features/system/SocietyOnboardingReview/Pages/SocietyOnboardingReview";
+import IntegrationsAPIs from "../features/system/IntegrationsAPIs/Pages/IntegrationsAPIs";
+import RolesPermissions from "../features/system/RolesPermissions/Pages/RolesPermissions";
+import AuditSystemLogs from "../features/system/AuditSystemLogs/Pages/AuditSystemLogs";
+import BillingPlans from "../features/system/BillingPlans/Pages/BillingPlans";
+
 function AppRoutes() {
   return (
     <BrowserRouter>
+
       <Routes>
-        {/* Login */}
+
+        {/* =====================================================
+            AUTHENTICATION ROUTES
+        ===================================================== */}
+
+        {/* Email Login */}
         <Route
           path="/"
           element={<Login />}
         />
 
-        {/* Protected Routes */}
+        <Route
+          path="/login"
+          element={<Login />}
+        />
+
+        {/* Mobile Login */}
+        <Route
+          path="/login/phone"
+          element={<PhoneLogin />}
+        />
+
+        {/* Forgot Password - Step 1 */}
+        <Route
+          path="/forgot-password"
+          element={<ForgotPassword />}
+        />
+
+        {/* Forgot Password - Step 2 */}
+        <Route
+          path="/forgot-password/verify-otp"
+          element={<VerifyOTP />}
+        />
+
+        {/* Forgot Password - Step 3 */}
+        <Route
+          path="/forgot-password/reset-password"
+          element={<ResetPassword />}
+        />
+
+
+        {/* =====================================================
+            PROTECTED ADMIN ROUTES
+        ===================================================== */}
+
         <Route
           element={
             <ProtectedRoute>
@@ -50,9 +111,20 @@ function AppRoutes() {
             </ProtectedRoute>
           }
         >
-          {/* =========================
-              Foundation
-          ========================= */}
+
+          {/* =================================================
+              PROFILE
+          ================================================= */}
+
+          <Route
+            path="/profile"
+            element={<Profile />}
+          />
+
+
+          {/* =================================================
+              FOUNDATION
+          ================================================= */}
 
           <Route
             path="/foundation"
@@ -79,9 +151,10 @@ function AppRoutes() {
             element={<GuardsStaff />}
           />
 
-          {/* =========================
-              Operational
-          ========================= */}
+
+          {/* =================================================
+              OPERATIONAL
+          ================================================= */}
 
           <Route
             path="/operational"
@@ -113,9 +186,10 @@ function AppRoutes() {
             element={<SmartAccessControl />}
           />
 
-          {/* =========================
-              Community
-          ========================= */}
+
+          {/* =================================================
+              COMMUNITY
+          ================================================= */}
 
           <Route
             path="/community"
@@ -146,10 +220,74 @@ function AppRoutes() {
             path="/community/society-documents"
             element={<SocietyDocuments />}
           />
+          
+          {/* =================================================
+              SYSTEM / PLATFORM
+          ================================================= */}
+
+          <Route
+            path="/system-platform"
+            element={
+              <Navigate
+                to="/system-platform/society-onboarding-review"
+                replace
+              />
+            }
+          />
+
+          <Route
+            path="/system-platform/society-onboarding-review"
+            element={<SocietyOnboardingReview />}
+          />
+
+          <Route
+            path="/system-platform/integrations-apis"
+            element={<IntegrationsAPIs />}
+          />
+
+          <Route
+            path="/system-platform/roles-permissions"
+            element={<RolesPermissions />}
+          />
+
+          <Route
+            path="/system-platform/audit-system-logs"
+            element={<AuditSystemLogs />}
+          />
+
+          <Route
+            path="/system-platform/billing-plans"
+            element={<BillingPlans />}
+          />
+
+      
         </Route>
+
+        
+
+        {/* =====================================================
+            FALLBACK
+        ===================================================== */}
+
+        <Route
+          path="*"
+          element={
+            <Navigate
+              to="/"
+              replace
+            />
+          }
+        />
+
       </Routes>
+
     </BrowserRouter>
   );
 }
+
+
+/* =====================================================
+   DEFAULT EXPORT
+===================================================== */
 
 export default AppRoutes;

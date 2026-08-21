@@ -15,11 +15,8 @@ import VoterParticipationReport from "../sections/VoterParticipationReport/Voter
 import CreatePollModal from "../sections/PollCreator/components/CreatePollModal";
 
 function PollsVoting() {
-  const [activeTab, setActiveTab] =
-    useState("pollCreator");
-
-  const [showCreateModal, setShowCreateModal] =
-    useState(false);
+  const [activeTab, setActiveTab] = useState("pollCreator");
+  const [showCreateModal, setShowCreateModal] = useState(false);
 
   const renderSection = () => {
     switch (activeTab) {
@@ -46,46 +43,62 @@ function PollsVoting() {
     }
   };
 
-  const activeTabLabel =
-    pollTabs.find(
-      (tab) => tab.id === activeTab
-    )?.label || "Poll Creator";
+  const renderAction = () => {
+    switch (activeTab) {
+      case "pollCreator":
+        return (
+          <Button onClick={() => setShowCreateModal(true)}>
+            + Create Poll
+          </Button>
+        );
+
+      case "agmResolutionManager":
+        return (
+          <Button
+            onClick={() => {
+              window.dispatchEvent(
+                new CustomEvent("open-agm-resolution-modal")
+              );
+            }}
+          >
+            + Draft resolution
+          </Button>
+        );
+
+      case "committeeElectionSetup":
+        return (
+          <Button
+            onClick={() => {
+              window.dispatchEvent(
+                new CustomEvent("open-committee-nomination-modal")
+              );
+            }}
+          >
+            + Add nomination
+          </Button>
+        );
+
+      default:
+        return null;
+    }
+  };
 
   return (
-    <>
-      <AdminPage
-        breadcrumb={[
-          "Community",
-          "Polls & Voting",
-        ]}
-        title={activeTabLabel}
-        action={
-          activeTab === "pollCreator" ? (
-            <Button
-              onClick={() =>
-                setShowCreateModal(true)
-              }
-            >
-              + Create Poll
-            </Button>
-          ) : null
-        }
-        tabs={pollTabs}
-        activeTab={activeTab}
-        onTabChange={setActiveTab}
-      >
-        {renderSection()}
-      </AdminPage>
+    <AdminPage
+      breadcrumb={["Community", "Polls & Voting"]}
+      title={pollTabs.find((tab) => tab.id === activeTab)?.label}
+      action={renderAction()}
+      tabs={pollTabs}
+      activeTab={activeTab}
+      onTabChange={setActiveTab}
+    >
+      {renderSection()}
 
-      {activeTab === "pollCreator" && (
-        <CreatePollModal
-          open={showCreateModal}
-          onClose={() =>
-            setShowCreateModal(false)
-          }
-        />
-      )}
-    </>
+      <CreatePollModal
+        open={showCreateModal}
+        onClose={() => setShowCreateModal(false)}
+      />
+    </AdminPage>
   );
 }
 

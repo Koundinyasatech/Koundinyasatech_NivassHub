@@ -6,6 +6,7 @@ import CommonTabs from "../Tabs/CommonTabs";
 
 function AdminPage({
   breadcrumb = [],
+  contextBar,
   title,
   subtitle,
   action,
@@ -18,6 +19,24 @@ function AdminPage({
     <div className="admin-page">
 
       <Breadcrumb items={breadcrumb} />
+
+      {contextBar && (
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "8px",
+            width: "fit-content",
+            marginBottom: "8px",
+            padding: "8px 14px",
+            borderRadius: "8px",
+            background: "#e5e7eb",
+            fontSize: "14px",
+          }}
+        >
+          {contextBar}
+        </div>
+      )}
 
       <PageHeader
         title={title}
